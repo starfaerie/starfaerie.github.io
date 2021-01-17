@@ -376,8 +376,8 @@ button:hover {
     border-radius: 5px;
 }
 
-.right-image-post h4,
-.left-image-post h4 {
+.right-image-post h3,
+.left-image-post h3 {
     margin-top: 30px;
 }
 
@@ -409,7 +409,7 @@ button:hover {
     -o-transition: all 0.5s;
 }
 
-.service-item h4 {
+.service-item h3 {
     transition: all 0.5s;
     -webkit-transition: all 0.5s;
     -moz-transition: all 0.5s;
@@ -427,7 +427,7 @@ button:hover {
     background-color: rgba(250, 250, 250, 1);
 }
 
-.service-item:hover h4 {
+.service-item:hover h3 {
     color: #1e1e1e;
 }
 
@@ -786,8 +786,8 @@ section.contact-me {
         left: 0%;
     }
 
-    .right-image-post h4,
-    .left-image-post h4 {
+    .right-image-post h3,
+    .left-image-post h3 {
         margin-top: 0px;
     }
 
