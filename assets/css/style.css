@@ -584,7 +584,7 @@ figure.snip-preview figcaption {
   opacity: 0;
   z-index: 1;
 }
-figure.snip-preview h4 {
+figure.snip-preview h3 {
     margin-top: 15px;
   margin-bottom: 5px;
   color: #232323;
@@ -655,7 +655,7 @@ figure.snip-preview.hover:after {
   opacity: 0.5;
 }
 
-.hoverfadetext a h4 {
+.hoverfadetext a h3 {
     display: block;
     position: absolute;
     top: 0;
@@ -678,7 +678,7 @@ figure.snip-preview.hover:after {
   }
   
   /*fade in*/
-  .hoverfadetext:hover a h4 {
+  .hoverfadetext:hover a h3 {
     -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)";
     filter: alpha(opacity=100);
     opacity: 1;
