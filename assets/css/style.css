@@ -369,14 +369,14 @@ html {
     right: 10%;
     left: 35%;
     position: relative;
-    min-height: 100vh;
+    min-height: 80vh;
     padding-bottom: 80px;
     border-bottom: 3px solid rgba(250, 250, 250, 0.25);
 }
 
 .section-heading {
     text-align: center;
-    padding: 80px 45px;
+    padding: 50px 45px;
 }
 
 .section-heading h2 {
@@ -578,13 +578,18 @@ button:hover {
 
 section.my-work .section-heading {
     text-align: center;
-    padding: 80px 45px 50px 45px;
+    padding: 50px 45px 50px 45px;
 }
 
 .isotope-wrapper {
     position: relative;
     width: 100%;
     margin: auto;
+}
+
+.isotope-toolbar .white-button {
+    display:contents;
+    position:relative;
 }
 
 .isotope-toolbar input[type="radio"] {
@@ -598,14 +603,29 @@ section.my-work .section-heading {
     padding-bottom: 3px;
     font-size: 15px;
     font-weight: 700;
-    border-bottom: 2px solid transparent;
-    transform: ease-in-out 0.5s;
+    border: 2px solid transparent;
+    transform: ease-in-out 0.2s;
     cursor: pointer;
 }
 
-.isotope-toolbar input[type="radio"]:checked + span {
+.isotope-toolbar .white-button span {
+    padding: 12px 20px;
+    background-color: #fff;
     color: #a43f49;
-    border-bottom: 2px solid #a43f49;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+}
+
+.isotope-toolbar input[type="radio"]:checked + span, .isotope-toolbar input[type="radio"] + span:hover {
+    border: 2px solid #fff;
+    background-color: #a43f49;
+    color: #fff;
 }
 
 .isotope-box {
@@ -615,7 +635,9 @@ section.my-work .section-heading {
 
 .isotope-toolbar {
     text-align: center;
-    margin: 10px;
+    margin:auto;
+    width: 50%;
+    padding-bottom: 5px;
 }
 
 .isotope-toolbar p {
