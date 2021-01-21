@@ -367,12 +367,12 @@
 
     <!-- Video AutoPlay on Hover -->
     <script>
-      window.onload = function() { //executes this code after the DOM loads
-        //--- this is the selector element. Feel free to change this if you don't want all video objects targeted.
+      window.onload = function() {
+
+        // Video Hover Behaviour
         const hoverfadetext = document.getElementsByClassName(`hoverfadetext`);
         const vids = document.getElementsByTagName(`video`);
 
-        //--- Now we loop over all of the selected elements and add event listeners
         for (let i = 0; i < vids.length; i++) {
           hoverfadetext[i].addEventListener( `mouseover`, function(e) { 
             vids[i].play()
@@ -381,25 +381,27 @@
             vids[i].pause()
           })
         }
-        
-        // Isotope
-        (function($) {
-          var toggle = document.getElementById("menu-toggle");
-          var menu = document.getElementById("menu");
-          var close = document.getElementById("menu-close");
 
-          toggle.addEventListener("click", function(e) {
-            if (menu.classList.contains("open")) {
-              menu.classList.remove("open");
-            } else {
-              menu.classList.add("open");
-            }
-          });
+        // Menu Open+Close Behaviour
+        var toggle = document.getElementById("menu-toggle");
+        var menu = document.getElementById("menu");
+        var close = document.getElementById("menu-close");
 
-          close.addEventListener("click", function(e) {
+        toggle.addEventListener("click", function(e) {
+          if (menu.classList.contains("open")) {
             menu.classList.remove("open");
-          });
+          } else {
+            menu.classList.add("open");
+          }
+        });
 
+        close.addEventListener("click", function(e) {
+          menu.classList.remove("open");
+        });
+
+        
+        // Isotope behaviors
+        (function($) {
           // Close menu after click on smaller screens
           $(window).on("resize", function() {
             if ($(window).width() < 846) {
