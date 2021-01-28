@@ -34,7 +34,7 @@
           </i>
           <div class="container">
             <div class="image">
-              <a href="#">
+              <a href="https://starfaerie.github.io/">
                 <picture>
                   <source type="image/webp"
                       srcset="assets/images/author-image_170.webp, assets/images/author-image_255.webp 1.5x, assets/images/author-image_340.webp 2x" />
@@ -248,7 +248,7 @@
 
                 <div class="isotope-item" data-type="editors">
                   <figure class="hoverfadetext">
-                    <a href="assets/videos/tooltip.mp4">
+                    <a href="articles/tooltip.html">
                       <video class="hovervideo" loop muted width="260">            
                           <source src="assets/videos/tooltip.mp4" type="video/mp4">
                           Sorry, your browser doesn't support embedded videos.
@@ -372,13 +372,36 @@
         const hoverfadetext = document.getElementsByClassName(`hoverfadetext`);
         const vids = document.getElementsByTagName(`video`);
 
-        for (let i = 0; i < vids.length; i++) {
-          hoverfadetext[i].addEventListener( `mouseover`, function(e) { 
-            vids[i].play()
-          })
-          hoverfadetext[i].addEventListener( `mouseout`, function(e) {
-            vids[i].pause()
-          })
+        // if the user is not on a mobile device or tablet
+        if (!/Mobi|Android/i.test(navigator.userAgent)) {
+          // Video AutoPlay on Hover
+          for (let i = 0; i < vids.length; i++) {
+            hoverfadetext[i].addEventListener( `mouseover`, function(e) { 
+              vids[i].play()
+            })
+            hoverfadetext[i].addEventListener( `mouseout`, function(e) {
+              vids[i].pause()
+            })
+          }
+        } else {
+          for (let i = 0; i < vids.length; i++) {
+            const a = hoverfadetext[i].getElementsByTagName('a');
+            const h3 = a.getElementsByTagName('h3');
+            
+            h3.style.msFilter = "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)";
+            h3.style.filter = "alpha(opacity=100)";
+            h3.style.opacity = "1";
+            hoverfadetext[i].style.webkitFilter = "grayscale(0)";
+            hoverfadetext[i].style.filter = "grayscale(0)";
+            
+            vids[i].play();
+            vids[i].loop = true;
+                
+            vids[i].addEventListener('ended', function() {
+              this.currentTime = 0;
+              this.play();
+            }, false);
+          }
         }
 
         // Menu Open+Close
