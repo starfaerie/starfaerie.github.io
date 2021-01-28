@@ -367,14 +367,19 @@
 
     <script>
       window.onload = function() {
-
         //Video Autoplay when Visible
         function playVisibleVideos() {
           document.querySelectorAll("video").forEach(video => elementIsVisible(video) ? video.play() : video.pause());
+          document.querySelectorAll("video").forEach(video => elementIsVisible(video) ? 
+            video.style.filter = "grayscale(0)" : video.style.filter = "grayscale(0.5) brightness(0.8)");
+          document.querySelectorAll("video").forEach(video => elementIsVisible(video) ?
+            video.style.webkitFilter = "grayscale(0)" : video.style.webkitFilter = "grayscale(0.5) brightness(0.8)");
         }
         function elementIsVisible(el) {
           let rect = el.getBoundingClientRect();
-          return (rect.bottom >= 0 && rect.right >= 0 && rect.top <= (window.innerHeight || document.documentElement.clientHeight) && rect.left <= (window.innerWidth || document.documentElement.clientWidth));
+          return (rect.bottom >= 0 && rect.right >= 0 &&
+            rect.top <= (window.innerHeight || document.documentElement.clientHeight) &&
+            rect.left <= (window.innerWidth || document.documentElement.clientWidth));
         }
         let playVisibleVideosTimeout;
         window.addEventListener("scroll", () => {
@@ -383,18 +388,6 @@
         });
         window.addEventListener("resize", playVisibleVideos);
         window.addEventListener("DOMContentLoaded", playVisibleVideos);
-
-        // Video AutoPlay on Hover
-        const hoverfadetext = document.getElementsByClassName(`hoverfadetext`);
-        const vids = document.getElementsByTagName(`video`);
-        for (let i = 0; i < vids.length; i++) {
-          hoverfadetext[i].addEventListener( `mouseover`, function(e) { 
-            vids[i].play()
-          })
-          hoverfadetext[i].addEventListener( `mouseout`, function(e) {
-            vids[i].pause()
-          })
-        }
         
         // Menu Open+Close
         var toggle = document.getElementById("menu-toggle");
