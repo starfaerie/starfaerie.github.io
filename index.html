@@ -366,33 +366,25 @@
     <script src="assets/js/isotope.pkgd.min.js"></script>
 
     <script>
-      function checkScroll() {
-        var fraction = 0.8; // Play when 80% of the player is visible.
-
-        for(var i = 0; i < vids.length; i++) {
-            var video = vids[i];
-            var x = video.offsetLeft,
-              y = video.offsetTop,
-              w = video.offsetWidth,
-              h = video.offsetHeight,
-              r = x + w, //right
-              b = y + h, //bottom
-              visibleX, visibleY, visible;
-                
-            visibleX = Math.max(0, Math.min(w, window.pageXOffset + window.innerWidth - x, r - window.pageXOffset));
-            visibleY = Math.max(0, Math.min(h, window.pageYOffset + window.innerHeight - y, b - window.pageYOffset));
-
-            visible = visibleX * visibleY / (w * h);
-
-            if (visible > fraction) {
-              video.play();
-            } else {
-              video.pause();
-            }
-          }
-        }
-
       window.onload = function() {
+
+        function playVisibleVideos() {
+        document.querySelectorAll("video").forEach(video => elementIsVisible(video) ? video.play() : video.pause());
+      }
+
+      function elementIsVisible(el) {
+        let rect = el.getBoundingClientRect();
+        return (rect.bottom >= 0 && rect.right >= 0 && rect.top <= (window.innerHeight || document.documentElement.clientHeight) && rect.left <= (window.innerWidth || document.documentElement.clientWidth));
+      }
+
+      let playVisibleVideosTimeout;
+      window.addEventListener("scroll", () => {
+        clearTimeout(playVisibleVideosTimeout);
+        playVisibleVideosTimeout = setTimeout(playVisibleVideos, 100);
+      });
+
+      window.addEventListener("resize", playVisibleVideos);
+      window.addEventListener("DOMContentLoaded", playVisibleVideos);
 
         // Video AutoPlay on Hover
         const hoverfadetext = document.getElementsByClassName(`hoverfadetext`);
@@ -407,9 +399,6 @@
             vids[i].pause()
           })
         }
-
-        window.addEventListener('scroll', checkScroll, false);
-        window.addEventListener('resize', checkScroll, false);
         
         // Menu Open+Close
         var toggle = document.getElementById("menu-toggle");
