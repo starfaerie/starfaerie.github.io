@@ -241,6 +241,10 @@ a:hover.inline-link {
     border-bottom: 2px solid #fff !important;
 }
 
+.main-nav .last-menu-item a {
+    border-bottom: 2px solid #fff;
+}
+
 .main-nav li {
     display: block;
 }
