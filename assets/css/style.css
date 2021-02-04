@@ -238,7 +238,7 @@ a:hover.inline-link {
 }
 
 .main-nav li:last-child a {
-    border-bottom: 2px solid #fff;
+    border-bottom: 2px solid #fff !important;
 }
 
 .main-nav li {
