@@ -136,11 +136,6 @@ textarea {
     outline: none;
 }
 
-a,
-a:hover {
-    text-decoration: none;
-}
-
 p {
     font-size: 16px;
     line-height: 24px;
@@ -182,10 +177,11 @@ abbr[title] {
     color:#42c7f1;
   }
 
-  a:link, a:visited {
+  a,
+a:hover, a:link, a:visited {
     text-decoration: none !important;
     border-bottom: none !important;
-  }
+}
 
 a:link.inline-link {
     color:#42c7f1 !important;
