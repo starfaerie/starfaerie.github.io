@@ -103,16 +103,20 @@ body {
 }
 
 #page-wraper {
-    background:url(../images/grass_4k.webp);
-    background-repeat:no-repeat;
-    background-position:center center;
-    background-attachment:fixed;
+    right:0;
+    bottom:0;
+    min-width:100%;
+    min-height:100%;
+    width:auto;
+    height:auto;
+    z-index:-100;
+    margin:0;
+    background:url(../images/grass_4k.jpg) center center no-repeat;
     -webkit-background-size:cover;
     -moz-background-size:cover;
     -o-background-size:cover;
     background-size:cover;
-    width:100%;
-    min-height:100vh;
+    background-attachment:fixed;
     padding-top:20px;
     padding-bottom:20px;
 }
