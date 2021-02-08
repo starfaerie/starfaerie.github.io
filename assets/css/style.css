@@ -96,6 +96,11 @@
 
 /* Basic */
 
+html {
+    scroll-behavior:smooth;
+    scrollbar-color:#a43f49 #333; /* Firefox scrollbar colors */
+}
+
 body {
     font-family: 'Lato', sans-serif;
     overflow-x: hidden;
