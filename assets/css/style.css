@@ -208,7 +208,7 @@ abbr[title] {
     border-bottom: none !important;
     cursor: inherit !important;
     text-decoration: none !important;
-    color:#42c7f1;
+    color:#ff5365;
   }
 
   a,
@@ -218,23 +218,23 @@ a:hover, a:link, a:visited {
 }
 
 a:link.inline-link {
-    color:#42c7f1 !important;
+    color:#a43f49 !important;
     text-decoration: none;
     border-bottom: none;
 }
 a:link:active.inline-link {
-    color:#3aa5c5 !important;
+    color:#80303a !important;
 }
 a:visited.inline-link {
-    color:#6842f1 !important;
+    color:#a43f9f !important;
     text-decoration: none;
     border-bottom: none;
 }
 a:visited:active.inline-link {
-    color:#5a3ebe !important;
+    color:#91388c !important;
 }
 a:hover.inline-link {
-    color:#6967db !important;
+    color:#80303a !important;
 }
 
 *,
