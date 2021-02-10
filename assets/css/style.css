@@ -503,6 +503,18 @@ a:hover.inline-link {
     color: #fff;
 }
 
+.white-button a i svg path {
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    fill:#a43f49;
+}
+
+.white-button a:hover i svg path {
+    fill:#fff;
+}
+
 button {
     display: inline-block;
     padding: 10px 20px;
