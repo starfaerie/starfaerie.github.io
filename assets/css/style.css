@@ -792,13 +792,12 @@ figure.snip-preview figcaption {
   z-index: 1;
 }
 figure.snip-preview h3 {
-    margin-top: 15px;
-  margin-bottom: 5px;
-  color: #232323;
+    margin-top: 16px;
+    margin-bottom: 5px;
+    color: #232323;
 }
 figure.snip-preview span {
-    font-size: 14px;
-    font-style: italic;
+    font-size: 16px;
     display: block;
     color: #333;
 }
