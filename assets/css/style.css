@@ -861,6 +861,7 @@ figure.snip-preview.hover:after {
   opacity: 0.5;
 }
 
+/*
 a .hoverfadetext h3 {
     display: block;
     position: absolute;
@@ -883,14 +884,11 @@ a .hoverfadetext h3 {
     opacity: 0;
     color: #fff;
   }
-  
-  /*fade in*/
   a:hover .hoverfadetext h3 {
     -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)";
     filter: alpha(opacity=100);
     opacity: 1;
   }
-
   .hoverfadetext .hovervideo {
     display: block;
     text-align: center;
@@ -902,6 +900,7 @@ a .hoverfadetext h3 {
     -moz-transition: all 0.5s;
     -o-transition: all 0.5s;
 }
+*/
 
 @media screen and (max-width: 1680px) {
     .menu {
