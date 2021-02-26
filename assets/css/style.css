@@ -365,15 +365,7 @@ a:hover.inline-link {
 .section-heading h2 {
     font-size: 32px;
     font-weight: 700;
-    background-color:#fdcdaf;
-    background-image:linear-gradient(45deg,#a43f49 16.666%,#E16541 33.333%,#F18F43 50%,#fdcdaf 66.666%,#fff 83.333%);
-    background-size: 100%;
-    background-repeat:no-repeat;
-    -webkit-background-clip:text;
-    -moz-background-clip:text;
-    background-clip:text;
-    -webkit-text-fill-color:transparent; 
-    -moz-text-fill-color:transparent;
+    color:#fff;
 }
 
 .section-heading .line-dec {
