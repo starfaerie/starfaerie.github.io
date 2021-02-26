@@ -591,7 +591,7 @@ section.my-work .section-heading {
 }
 
 .isotope-toolbar .white-button {
-    display:contents;
+    display:table-cell;
     position:relative;
 }
 
@@ -639,8 +639,10 @@ section.my-work .section-heading {
 .isotope-toolbar {
     text-align: center;
     margin:auto;
-    width: 50%;
     padding-bottom: 5px;
+    overflow: hidden;
+    display: table;
+    text-align: center;
 }
 
 .isotope-toolbar p {
