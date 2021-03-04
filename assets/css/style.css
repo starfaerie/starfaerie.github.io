@@ -706,7 +706,7 @@ figure.snip-preview span {
     color: #333;
 }
 figure.snip-preview i {
-  position: relative!important;
+  position: relative !important;
   font-size: 18px;
   background-color: #a43f49;
   width: 40px;
@@ -717,6 +717,7 @@ figure.snip-preview i {
   border-radius: 5px;
   color: #fff;
 }
+
 figure.snip-preview:after {
   background-color: #fff;
   position: absolute;
