@@ -738,6 +738,7 @@ figure.snip-preview:after {
   -ms-transform-origin: 50% 50%;
   transform-origin: 50% 50%;
   opacity: 0;
+  border-radius:5px;
 }
 figure.snip-preview a {
   left: 0;
