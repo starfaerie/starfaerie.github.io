@@ -112,6 +112,9 @@ abbr[title] {
     text-decoration: none !important;
     color:#FFD1D1;
   }
+  abbr[title].white {
+    color:#fff;
+  }
 
   a,
 a:hover, a:link, a:visited {
