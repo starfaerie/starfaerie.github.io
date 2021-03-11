@@ -200,6 +200,7 @@ a:hover.inline-link {
 }
 
 .main-nav li:hover a,
+.main-nav li a:focus,
 .main-nav li.active a {
     background: #fff;
     color: #8c363e;
@@ -256,12 +257,14 @@ a:hover.inline-link {
     -o-transition: all 0.5s;
 }
 
-.menu .social-network ul li a:hover {
+.menu .social-network ul li a:hover,
+.menu .social-network ul li a:focus {
     background-color: #fff;
     color: #a43f49;
 }
 
-.menu .social-network ul li a:hover i svg path {
+.menu .social-network ul li a:hover i svg path,
+.menu .social-network ul li a:focus i svg path {
     fill: #a43f49;
 }
 
@@ -403,7 +406,8 @@ a:hover.inline-link {
     -o-transition: all 0.5s;
 }
 
-.white-button a:hover {
+.white-button a:hover,
+.white-button a:focus {
     background-color: #a43f49;
     color: #fff;
 }
@@ -416,7 +420,8 @@ a:hover.inline-link {
     fill:#a43f49;
 }
 
-.white-button a:hover i svg path {
+.white-button a:hover i svg path,
+.white-button a:focus i svg path {
     fill:#fff;
 }
 
@@ -438,7 +443,8 @@ button {
     cursor: pointer;
 }
 
-button:hover {
+button:hover,
+button:focus {
     outline: none;
     background-color: #a43f49;
     color: #fff;
@@ -504,15 +510,18 @@ button:hover {
     -o-transition: all 0.5s;
 }
 
-.service-item:hover {
+.service-item:hover,
+.service-item:focus {
     background-color: rgba(250, 250, 250, 1);
 }
 
-.service-item:hover h3 {
+.service-item:hover h3,
+.service-item:focus h3 {
     color: #1e1e1e;
 }
 
-.service-item:hover p {
+.service-item:hover p,
+.service-item:focus p {
     color: #4a4a4a;
 }
 
@@ -529,7 +538,8 @@ button:hover {
     -o-transition: all 0.5s;
 }
 
-.service-item:hover .service-icon svg path {
+.service-item:hover .service-icon svg path,
+.service-item:focus .service-icon svg path {
     fill: #a43f49;
     transition: all 0.5s;
     -webkit-transition: all 0.5s;
@@ -537,7 +547,8 @@ button:hover {
     -o-transition: all 0.5s;
 }
 
-.service-item:hover .Pacman {
+.service-item:hover .Pacman,
+.service-item:focus .Pacman {
     border-top: 30px solid #d8d800;
     border-left: 30px solid #d8d800;
     border-bottom: 30px solid #d8d800;
@@ -547,7 +558,8 @@ button:hover {
     -o-transition: all 0.5s;
 }
 
-.service-item:hover .PacmanBowLeft {
+.service-item:hover .PacmanBowLeft,
+.service-item:focus .PacmanBowLeft {
     border-right: 20px solid #db0000;
     transition: all 0.5s;
     -webkit-transition: all 0.5s;
@@ -555,7 +567,8 @@ button:hover {
     -o-transition: all 0.5s;
 }
 
-.service-item:hover .PacmanBowRight {
+.service-item:hover .PacmanBowRight,
+.service-item:focus .PacmanBowRight {
     border-right: 20px solid #db0000;
     transition: all 0.5s;
     -webkit-transition: all 0.5s;
@@ -563,7 +576,8 @@ button:hover {
     -o-transition: all 0.5s;
 }
 
-.service-item:hover .PacmanFood {
+.service-item:hover .PacmanFood,
+.service-item:focus .PacmanFood {
     border: 5px solid #b4b4b4;
     transition: all 0.5s;
     -webkit-transition: all 0.5s;
@@ -620,7 +634,8 @@ section.my-work .section-heading {
     -o-transition: all 0.2s ease-in-out;
 }
 
-.isotope-toolbar input[type="radio"]:checked + span, .isotope-toolbar input[type="radio"] + span:hover {
+.isotope-toolbar input[type="radio"]:checked + span, .isotope-toolbar input[type="radio"] + span:hover,
+.isotope-toolbar input[type="radio"]:checked + span, .isotope-toolbar input[type="radio"] + span:focus {
     border: 2px solid #fff;
     background-color: #a43f49;
     color: #fff;
@@ -751,6 +766,7 @@ figure.snip-preview a {
   z-index: 1;
 }
 figure.snip-preview:hover figcaption,
+figure.snip-preview:focus figcaption,
 figure.snip-preview.hover figcaption {
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
@@ -762,6 +778,7 @@ figure.snip-preview.hover figcaption {
   transition-delay: 0.2s;
 }
 figure.snip-preview:hover:after,
+figure.snip-preview:focus:after,
 figure.snip-preview.hover:after {
   transform: rotateX(0);
   -webkit-transform: rotateX(0);
