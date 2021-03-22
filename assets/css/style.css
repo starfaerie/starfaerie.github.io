@@ -200,7 +200,6 @@ a:hover.inline-link {
 }
 
 .main-nav li:hover a,
-.main-nav li a:focus,
 .main-nav li.active a {
     background: #fff;
     color: #8c363e;
