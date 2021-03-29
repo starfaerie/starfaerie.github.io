@@ -105,7 +105,8 @@ ul.list {
     padding-left:40px;
     margin:1em 0 1em 0;
 }
-ul.list li {
+ul.list li,
+ul li.item {
     display:list-item;
 }
 
