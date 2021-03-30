@@ -137,23 +137,23 @@ a:hover, a:link, a:visited {
 }
 
 a:link.inline-link {
-    color:#a43f49 !important;
+    color:#ff7b88 !important;
     text-decoration: none;
     border-bottom: none;
 }
 a:link:active.inline-link {
-    color:#80303a !important;
+    color:#e19199 !important;
 }
 a:visited.inline-link {
-    color:#a43f9f !important;
+    color:#e19199 !important;
     text-decoration: none;
     border-bottom: none;
 }
 a:visited:active.inline-link {
-    color:#91388c !important;
+    color:#e19199 !important;
 }
 a:hover.inline-link {
-    color:#80303a !important;
+    color:#e19199 !important;
 }
 
 *,
