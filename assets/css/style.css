@@ -110,6 +110,10 @@ ul li.item {
     display:list-item;
 }
 
+b.big, strong.big {
+    font-size:17px;
+}
+
 html {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -388,6 +392,13 @@ a:hover.inline-link {
     height: 3px;
     background-color: #a43f49;
     margin: 10px auto;
+}
+
+.line-dec {
+    width:80%;
+    height:2px;
+    background-color:#a43f49;
+    margin:10px auto;
 }
 
 .section-heading span {
