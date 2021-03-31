@@ -286,6 +286,14 @@
         display: block;
         margin: 7px auto;
     }
+    i#menu-toggle svg {
+        display:block;
+        margin:8px auto;
+    }
+    i#menu-close svg {
+        display:block;
+        margin:15px auto 0px auto;
+    }
 
     .menu:before,
     .menu:after {
@@ -894,6 +902,13 @@
 
         .menu .image {
             margin-top: 20px;
+        }
+    }
+
+    @media screen and (max-width: 960px) and (min-width: 846px) {
+        .menu .image img {
+            width:160px;
+            height:160px;
         }
     }
 
