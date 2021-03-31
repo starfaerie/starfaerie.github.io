@@ -282,6 +282,11 @@
         fill: #a43f49;
     }
 
+    .menu .social-network ul li a i svg {
+        display: block;
+        margin: 7px auto;
+    }
+
     .menu:before,
     .menu:after {
         content: "";
