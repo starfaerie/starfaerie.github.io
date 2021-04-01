@@ -197,9 +197,10 @@
             </div>
             <nav class="main-nav">
               <ul class="main-menu">
-                <li><a href="#about-me" itemprop="url" tabindex="-1">About Me</a></li>
-                <li><a href="#skills" itemprop="url" tabindex="-1">My Tools</a></li>
-                <li class="last-menu-item"><a href="#portfolio" itemprop="url" tabindex="-1">My Portfolio</a></li>
+                <li><a class="scroll" href="#about-me" itemprop="url" tabindex="-1">About Me</a></li>
+                <li><a class="scroll" href="#skills" itemprop="url" tabindex="-1">My Tools</a></li>
+                <li><a class="scroll" href="#portfolio" itemprop="url" tabindex="-1">My Portfolio</a></li>
+                <li class="last-menu-item"><a href="https://astridwilde.com/tutorials" itemprop="url" tabindex="-1">My Tutorials</a></li>
               </ul>
             </nav>
             <div class="social-network">
@@ -610,7 +611,7 @@
         });
       };
 
-      $(".main-menu").on("click", "a", function(e) {
+      $(".main-menu").on("click", "a.scroll", function(e) {
         e.preventDefault();
         showSection($(this).attr("href"), true);
       });
