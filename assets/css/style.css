@@ -227,10 +227,10 @@
     }
 
     .menu .image img {
-        width: 220px;
-        height: 220px;
         border-radius: 50%;
         text-align: center;
+        max-width:95%;
+        height:auto;
     }
 
     .menu .author-content {
@@ -253,7 +253,7 @@
     }
 
     .menu .social-network ul li {
-        margin: 0 3px;
+        margin: 0;
     }
 
     .menu .social-network ul li a {
@@ -905,10 +905,12 @@
         }
     }
 
-    @media screen and (max-width: 960px) and (min-width: 846px) {
+    @media screen and (min-width: 846px) {
         .menu .image img {
-            width:160px;
-            height:160px;
+            width:95%;
+            height:auto;
+            max-width:220px;
+            max-height:220px;
         }
     }
 
