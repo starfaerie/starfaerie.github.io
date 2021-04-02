@@ -1,0 +1,59 @@
+<pre translate="no"><code>
+    <b class="type">public static class</b> <b class="class">FastPoissonDiskSampling</b> {
+    
+        <b class="type">public static</b> List&lt;<b class="unity-type">Vector2</b>&gt; sampleRegionSize, <b class="type">int</b> numSamplesBeforeRejection = <b class="const">30</b>) {
+            <b class="type">float</b> cellSize = radius/Mathf.Sqrt(<b class="const">2</b>);
+            <b class="type">int</b>[,] grid = <b class="type">new int</b>[Mathf.CeilToInt(sampleRegionSize.x/cellSize), Mathf.CeilToInt(sampleRegionSize.y/cellSize)];
+            List&lt;<b class="unity-type">Vector2</b>&gt; points = <b class="type">new</b> List&lt;<b class="unity-type">Vector2</b>&gt;();
+            List&lt;<b class="unity-type">Vector2</b>&gt; spawnPoints = <b class="type">new</b> List&lt;<b class="unity-type">Vector2</b>&gt;
+            { sampleRegionSize / <b class="const">2</b> };
+    
+            <i class="comment">// Some test comments here
+            // And some more yep
+            </i>
+            <b class="type">while</b> (spawnPoints.Count > <b class="const">0</b>) {
+                <b class="type">int</b> spawnIndex = Random.Range(0,spawnPoints.Count);
+                <b class="unity-type">Vector2</b> spawnCentre = spawnPoints[spawnIndex];
+                <b class="type">bool</b> candidateAccepted = false;
+    
+                <b class="type">for</b> (<b class="type">int</b> i = <b class="const">0</b>; i < numSamplesBeforeRejection; i++) {
+                    <b class="type">float</b> angle = Random.value * <b class="const">Mathf.PI</b> * <b class="const">2</b>;
+                    <b class="unity-type">Vector2</b> dir = <b class="type">new</b> <b class="unity-type">Vector2</b>(Mathf.Sin(angle), Mathf.Cos(angle));
+                    <b class="unity-type">Vector2</b> candidate = spawnCentre + dir * Random.Range(radius, <b class="const">2</b> * radius);
+                    <b class="type">if</b> (!IsValid(candidate, sampleRegionSize, cellSize, radius, points, grid)) <b class="type">continue</b>;
+                    points.Add(candidate);
+                    spawnPoints.Add(candidate); 
+                    grid[(<b class="type">int</b>)(candidate.x/cellSize),(<b class="type">int</b>)(candidate.y/cellSize)] = points.Count;
+                    candidateAccepted = <b class="type">true</b>;
+                    break;
+                }
+                            
+                <b class="type">if</b> (!candidateAccepted) {
+                    spawnPoints.RemoveAt(spawnIndex);
+                }
+            }
+            <b class="type">return</b> points;
+        }
+                            
+        <b class="type">private static bool</b> IsValid(<b class="unity-type">Vector2</b> candidate, <b class="unity-type">Vector2</b> sampleRegionSize, <b class="type">float</b> cellSize, <b class="type">float</b> radius, IReadOnlyList&lt;<b class="unity-type">Vector2</b>&gt; points, <b class="type">int</b>[,] grid) {
+            <b class="type">if</b> (!(candidate.x >= <b class="const">0</b>) || !(candidate.x < sampleRegionSize.x) || !(candidate.y >= <b class="const">0</b>) || !(candidate.y < sampleRegionSize.y)) <b class="type">return false</b>;
+            
+            <b class="type">int</b> cellX = (<b class="type">int</b>)(candidate.x/cellSize);
+            <b class="type">int</b> cellY = (<b class="type">int</b>)(candidate.y/cellSize);
+            <b class="type">int</b> searchStartX = Mathf.Max(<b class="const">0</b>,cellX <b class="const">-2</b>);
+            <b class="type">int</b> searchEndX = Mathf.Min(cellX+2,grid.GetLength(<b class="const">0</b>)-<b class="const">1</b>);
+            <b class="type">int</b> searchStartY = Mathf.Max(<b class="const">0</b>,cellY <b class="const">-2</b>);
+            <b class="type">int</b> searchEndY = Mathf.Min(cellY+2,grid.GetLength(<b class="const">1</b>)-<b class="const">1</b>);
+                            
+            <b class="type">for</b> (<b class="type">int</b> x = searchStartX; x <= searchEndX; x++) {
+                <b class="type">for</b> (<b class="type">int</b> y = searchStartY; y <= searchEndY; y++) {
+                    <b class="type">int</b> pointIndex = grid[x,y]-<b class="const">1</b>;
+                    <b class="type">if</b> (pointIndex == <b class="const">-1</b>) <b class="type">continue</b>;
+                    <b class="type">float</b> sqrDst = (candidate - points[pointIndex]).sqrMagnitude;
+                    <b class="type">if</b> (sqrDst < radius*radius) <b class="type">return false</b>;
+                }
+            }
+            <b class="type">return true</b>
+        }
+    }
+</code></pre>

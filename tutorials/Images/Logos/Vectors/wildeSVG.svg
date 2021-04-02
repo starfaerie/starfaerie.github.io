@@ -1,0 +1,39 @@
+<svg width="128px" height="64px" version="1.1" viewBox="0 0 132.79 49.448" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <style type="text/css">
+            @font-face {
+                font-family:'Rawengulksans';
+                font-style:medium;
+                font-weight:500;
+                src:    url('Fonts/Rawengulksans.otf') format('opentype'),
+                        url('Fonts/Rawengulksans.ttf') format('truetype');
+                unicode-range: U+0077, U+0069, U+006C, U+0064, U+0065;
+            }
+        </style>
+    </defs>
+    <g transform="translate(-40.45 -122.23)" fill="#000">
+        <text x="39.6875" y="170.65623" font-family="RawengulkSans" font-size="63.5px" font-weight="500" style="line-height:1.25" xml:space="preserve"><tspan>wi</tspan></text>
+            <g transform="translate(41.52 49.46)">
+                <g>
+                    <path d="m50.636 72.769h1.5518v18.131h-1.5518z"/>
+                    <path transform="rotate(240)" d="m-97.61-5.5598h1.5518v18.131h-1.5518z"/>
+                    <path transform="rotate(120)" d="m44.564-94.75h1.5518v18.131h-1.5518z"/>
+                </g>
+                <g>
+                    <path transform="rotate(209.88)" d="m-83.683-40.891h1.5518v4.1555h-1.5518z"/>
+                    <path transform="rotate(-30.6)" d="m4.3406 88.033h1.5518v4.1555h-1.5518z"/>
+                    <path transform="rotate(-30.6)" d="m-0.70174 101.03h1.5518v4.1555h-1.5518z"/>
+                    <path transform="rotate(29.16)" d="m86.33 50.913h1.5518v4.1555h-1.5518z"/>
+                    <path transform="rotate(-90.36)" d="m-80.8 55.405h1.5518v4.1555h-1.5518z"/>
+                    <path transform="rotate(29.16)" d="m86.697 38.053h1.5518v4.1555h-1.5518z"/>
+                    <path transform="rotate(88.92)" d="m84.588-45.38h1.5518v4.1555h-1.5518z"/>
+                    <path transform="rotate(29.16)" d="m81.586 51.018h1.5518v4.1555h-1.5518z"/>
+                    <path transform="rotate(148.68)" d="m0.14601-92.4h1.5518v4.1555h-1.5518z"/>
+                    <path transform="rotate(148.68)" d="m-4.3855-105.62h1.5518v4.1554h-1.5518z"/>
+                    <path transform="rotate(-90.36)" d="m-80.697 42.442h1.5518v4.1555h-1.5518z"/>
+                    <path transform="rotate(-91.8)" d="m-87.133 53.285h1.5518v4.1555h-1.5518z"/>
+                </g>
+            </g>
+        <text x="100.84863" y="171.10605" font-family="RawengulkSans" font-size="63.5px" font-weight="500" style="line-height:1.25" xml:space="preserve"><tspan>lde</tspan></text>
+    </g>
+</svg>
