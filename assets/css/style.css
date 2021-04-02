@@ -51,22 +51,6 @@
         background-size: cover;
     }
 
-    /*Fixes scroll jitter in IE 10 and 11*/
-    /*
-    *TODO: Fix Input Filtering in IE
-    */
-    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) 
-    {
-        html{
-            overflow: hidden;
-            height: 100%;    
-        }
-        body{
-            overflow: auto;
-            height: 100%;
-        }
-    }
-
     input,
     select,
     textarea {
@@ -1070,6 +1054,31 @@
         display: grid;
         margin-left: -5px;
         margin-top: 25px;
+    }
+
+    /*Fixing Edge scroll bug*/
+    @supports ( -ms-accelerator:true ) 
+    {
+        html{
+            overflow: hidden;
+            height: 100%;    
+        }
+        body{
+            overflow: auto;
+            height: 100%;
+        }
+    }
+    /*Fixing IE 10/11 scroll bug TODO: Not yet fixed for trackpads */
+    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) 
+    {
+        html{
+            overflow: hidden;
+            height: 100%;    
+        }
+        body{
+            overflow: auto;
+            height: 100%;
+        }
     }
 }
 
