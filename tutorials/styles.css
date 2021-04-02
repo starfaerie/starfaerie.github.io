@@ -259,10 +259,6 @@ a:link {
 }
 
 .youtube-container:hover {
-    -webkit-transition: filter 0.2s ease-in-out;
-    -moz-transition: filter 0.2s ease-in-out;
-    -o-transition: filter 0.2s ease-in-out;
-    transition: filter 0.2s ease-in-out;
     filter: brightness(1.0);
 }
 
@@ -279,6 +275,16 @@ a:link {
     top: 50%;
     transform: translate(-50%, -50%);
     z-index: 2;
+}
+.youtube-play-button svg path.outer-play {
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    fill:#282828;
+}
+.youtube-play-button:hover svg path.outer-play {
+    fill:#c4302b;
 }
 
 .play-button {
