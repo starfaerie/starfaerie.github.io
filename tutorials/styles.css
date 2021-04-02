@@ -395,7 +395,6 @@ a.articleNavButton:hover {
     color:#fff;
     line-height:1;
     text-align:center;
-    cursor:pointer;
 }
 .hero-socials a svg {
     -webkit-transform-origin: center center;

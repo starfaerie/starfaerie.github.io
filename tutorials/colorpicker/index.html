@@ -174,7 +174,7 @@
     <!-- Site Navigation -->
     <div id="navbar">
         <nav id="nav">
-            <div id="navlogo" tabindex="0" role="button" aria-pressed="false" onclick="topFunction()" aria-label="Back to Top">
+            <div id="navlogo">
                 <svg width="64" height="32" version="1.1" viewBox="0 0 133.69 35.798" xmlns="http://www.w3.org/2000/svg">
                     <g transform="translate(.42258 -.53449)" fill="none" stroke="#fff" stroke-width="2.9997">
                      <g stroke-linejoin="bevel">
@@ -1332,6 +1332,9 @@
         </div>
     </main>
 
+    <!-- Scoll Button Popup -->
+    <button onclick="topFunction()" id="myBtn" tabindex=0 onkeydown="topFunction()"
+        title="Go to top of page">Top</button>
     <canvas class="background" title="Pink and gold particles float in the background"></canvas>
 
     <!-- Load Particles.js --> -->
@@ -1343,6 +1346,9 @@
                 connectParticles: false
             });
         };
+
+        //Get the button:
+        var mybutton = document.getElementById("myBtn");
 
         // Get the navbar
         var navbar = document.getElementById("navbar");
@@ -1358,6 +1364,19 @@
 
         // Get main page content
         var content = document.getElementById("content");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop >= sticky || document.documentElement.scrollTop >= sticky) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
 
         // For IE8+ functionality
         if (!document.getElementsByClassName) {
