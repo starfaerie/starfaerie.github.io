@@ -184,8 +184,8 @@
     }
 
     .main-nav li a {
-        height: 45px;
-        line-height: 45px;
+        height: 55px;
+        line-height: 55px;
         display: inline-block;
         font-size: 16px;
         font-weight: 700;
@@ -232,7 +232,7 @@
     }
 
     .menu .social-network {
-        margin-top: 60px;
+        margin-top: 30px;
         margin-bottom: 40px;
     }
 
@@ -883,10 +883,6 @@
         .menu .social-network ul li {
             margin: 0;
         }
-
-        .menu .image {
-            margin-top: 20px;
-        }
     }
 
     @media screen and (min-width: 846px) {
@@ -952,16 +948,15 @@
         }
 
         .menu .image {
-            margin-top: 20px;        
+            margin-top: 1vh;
         }
 
         .menu .image img {
             width: 130px;
-            height: 130px;
         }
 
         .menu .author-content {
-            margin: 20px 0px 20px 0px;
+            margin: 1vh 0px 1vh 0px;
         }
 
         .menu .container {
