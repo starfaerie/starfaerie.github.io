@@ -128,6 +128,11 @@
         }
         .references-drawer-body.visible div.wrapper p {
             flex-grow:1;
+            font-size:16px;
+            font-size:2.5vw;
+            max-width:80%;
+            overflow-wrap:break-word;
+            text-align:left;
         }
         @-webkit-keyframes slideup {
             from {bottom:-200px} 
@@ -177,7 +182,7 @@
             text-align: center;
             border-radius: 6px;
             padding: 5px;
-            bottom:50px;
+            top:-50px;
             position: absolute;
             z-index: 1;
             left: 50%;
@@ -203,8 +208,12 @@
             visibility: visible;
             opacity: 1;
         }
+        .tooltip svg {
+            text-align:right;
+            align-self:flex-end;
+        }
         .QRCode {
-            display:block;margin:auto;background-color:#fff;padding:5px;
+            display:block;margin:auto;background-color:#fff;padding:5px;max-width:80%;height:auto;
         }
     </style>
 </head>
