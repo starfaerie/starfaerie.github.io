@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+    <meta name="description" content="Astrid's Crypto Donation Links" />
+    <meta name="author" content="Astrid Wilde" />
+    <link rel="canonical" href="https://astridwilde.com/donate/" />
+
+    <title>Astrid Wilde</title>
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="../assets/css/normalize.css" />
+    <link rel="stylesheet" href="../assets/css/webkit-scrollbars.css" />
+
+    <!-- Facebook Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://astridwilde.com/donate/">
+    <meta property="og:title" content="Astrid Wilde">
+    <meta property="og:image" content="https://astridwilde.com/assets/images/me_FB.jpg">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="1200"> <!-- Recommended width:1200 -->
+    <meta property="og:image:height" content="630"> <!-- Recommended height:630 -->
+    <meta property="og:image:alt" content="Astrid doing a Miley Cyrus impression">
+    <meta property="og:description" content="Astrid's Crypto Donation Links">
+    <!-- Fewer than 200 characters -->
+    <meta property="og:site_name" content="Astrid Wilde">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Twitter Card (defaults to Open Graph values) -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@astridwilde1">
+    <meta name="twitter:creator" content="@astridwilde1">
+
+    <style>
+        body{text-align:center;margin-left:auto;margin-right:auto;background-color:#3d3a3a;color:#fff}header{margin-top:20px;margin-bottom:20px}header img{border-radius:50%}.block a{display:block;font-size:16px;font-weight:700;color:#3d3a3a;width:95%;text-decoration:none;transition:all .3s;-webkit-transition:all .3s;-moz-transition:all .3s;-o-transition:all .3s;border:2px solid #fff;word-break:break-word;padding:16px}.block:hover a{color:#fff}.block a p{line-height:1.5;padding:0;margin:0}.block{z-index:0;overflow:hidden;margin:0 auto 16px auto;border:2px solid #fff;background-color:#fff;color:#3d3a3a;border-radius:0;width:700px;max-width:95%;transition:all .3s;-webkit-transition:all .3s;-moz-transition:all .3s;-o-transition:all .3s}.block:hover{background-color:#3d3a3a}#page-wraper{margin-top:20px;margin-bottom:50px}
+        #references-drawer {
+            opacity:0;
+            visibility:hidden;
+            display:none;
+        }
+        #references-drawer.visible {
+            margin:0 auto;
+            display:block;
+            visibility:visible;
+            opacity:1;
+            left:0;
+            right:0;
+            bottom:0;
+            width:80%;
+            max-width:800px;
+            position:fixed;
+            background-color:#000;
+            color:#fff;
+            text-align:left;
+            padding:10px 20px 20px 20px;
+            box-shadow:0 -1px 8px 0 rgba(0,0,0,0.5);
+            z-index:99;
+            padding-right:1rem;
+            -webkit-animation-name:slideup;
+            -webkit-animation-duration:0.4s;
+            -moz-animation-name:slideup;
+            -moz-animation-duration:0.4s;
+            -o-animation-name:slideup;
+            -o-animation-duration:0.4s;
+            animation-name:slideup;
+            animation-duration:0.4s;
+        }
+        #references-drawer-header {
+            display:flex;
+            align-items:center;
+            padding-bottom:15px;
+        }
+        #references-drawer-line-dec {
+            margin:2px auto;
+            background-color:#5e5e5e;
+            width:80%;
+            height:1px;
+        }
+        #references-drawer .references-drawer-title {
+            letter-spacing: 0.2em;
+            font-size: 1em;
+            text-transform: uppercase;
+            margin-left: 1em;
+            flex-grow:1;
+        }
+        #references-drawer .close-button {
+            color:transparent;
+            background-color:transparent;
+            border:0;
+            margin:0;
+            cursor:pointer;
+            box-sizing:content-box !important;
+        }
+        #references-drawer .close-button:before {
+            left:0;
+            content:'';
+            display:block;
+            width:100%;
+            height:100%;
+            min-width:1em;
+            min-height:1em;
+            background-repeat:no-repeat;
+            background-position:center;
+            background-image:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2220%22 height=%2220%22 viewBox=%220 0 20 20%22%3E%3Ctitle%3Eclose%3C/title%3E%3Cg fill=%22%23a2a9b1%22%3E%3Cpath d=%22M4.34 2.93l12.73 12.73-1.41 1.41L2.93 4.35z%22/%3E%3Cpath d=%22M17.07 4.34L4.34 17.07l-1.41-1.41L15.66 2.93z%22/%3E%3C/g%3E%3C/svg%3E");
+        }
+        .references-drawer-body,
+        svg.coin {
+            opacity:0;
+            visibility:hidden;
+            display:none;
+        }
+        .references-drawer-body.visible {
+            display:block;
+            visibility:visible;
+            opacity:1;
+            padding-top:3px;
+            padding-right:5px;
+        }
+        svg.coin.visible {
+            display:block;
+            visibility:visible;
+            opacity:1;
+        }
+        .references-drawer-body.visible div.wrapper {
+            display:flex;
+        }
+        .references-drawer-body.visible div.wrapper p {
+            flex-grow:1;
+        }
+        @-webkit-keyframes slideup {
+            from {bottom:-200px} 
+            to {bottom:0}
+        }
+        @-moz-keyframes slideup {
+            from {bottom:-200px} 
+            to {bottom:0}
+        }
+        @-o-keyframes slideup {
+            from {bottom:-200px} 
+            to {bottom:0}
+        }
+        @keyframes slideup {
+            from {bottom:-200px}
+            to {bottom:0}
+        }
+        button.copyButton {
+            color:transparent;
+            background-color:transparent;
+            border:0;
+            margin:0;
+            cursor:pointer;
+            box-sizing:content-box !important;
+        }
+        button.copyButton:before {
+            left:0;
+            content:'';
+            display:block;
+            width:100%;
+            height:100%;
+            min-width:1em;
+            min-height:1em;
+            background-repeat:no-repeat;
+            background-position:center;
+        }
+
+        .tooltip {
+            position: relative;
+            display: inline-block;
+        }
+        .tooltip .tooltiptext {
+            visibility: hidden;
+            min-width: 140px;
+            background-color: #555;
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 5px;
+            bottom:50px;
+            position: absolute;
+            z-index: 1;
+            left: 50%;
+            opacity: 0;
+            transition: opacity 0.3s;
+            transform:translateX(-80%);
+            -webkit-transform:translateX(-80%);
+            -moz-transform:translateX(-80%);
+            -o-transform:translateX(-80%);
+            -ms-transform:translateX(-80%);
+        }
+        .tooltip .tooltiptext::after {
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 80%;
+            margin-left: -5px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: #555 transparent transparent transparent;
+        }
+        .tooltip:hover .tooltiptext {
+            visibility: visible;
+            opacity: 1;
+        }
+        .QRCode {
+            display:block;margin:auto;background-color:#fff;padding:5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="page-wraper">
+        <!-- Header Image -->
+        <header>
+            <picture>
+                <source type="image/webp"
+                    srcset="../assets/images/author-image_170.webp, ../assets/images/author-image_255.webp 1.5x, ../assets/images/author-image_340.webp 2x" />
+                <img
+                    srcset="../assets/images/author-image_170.jpg, ../assets/images/author-image_255.jpg 1.5x, ../assets/images/author-image_340 2x"
+                    src="../assets/images/author-image_340.jpg" alt="Astrid Wilde" height="220" width="220"
+                    loading="lazy" />
+            </picture>
+            <h1>@astridwilde</h1>
+        </header>
+        <div class="block">
+            <a class="cite" onclick="citation('popup-cite-1')" href="#cite-1" target="_blank"
+                rel="noopener noreferrer" data-testid="LinkButton"><p id="cite-ref-1" class="reference">
+                    Bitcoin
+                    <svg style="vertical-align:sub" version="1.1" width="32px" height="32px" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+                        <g transform="translate(.0063088 -.0030198)">
+                         <path d="m63.033 39.744c-4.274 17.143-21.637 27.576-38.782 23.301-17.138-4.274-27.571-21.638-23.295-38.78 4.272-17.145 21.635-27.579 38.775-23.305 17.144 4.274 27.576 21.64 23.302 38.784z" fill="#f7931a"/>
+                         <path d="m46.103 27.444c0.637-4.258-2.605-6.547-7.038-8.074l1.438-5.768-3.511-0.875-1.4 5.616c-0.923-0.23-1.871-0.447-2.813-0.662l1.41-5.653-3.509-0.875-1.439 5.766c-0.764-0.174-1.514-0.346-2.242-0.527l4e-3 -0.018-4.842-1.209-0.934 3.75s2.605 0.597 2.55 0.634c1.422 0.355 1.679 1.296 1.636 2.042l-1.638 6.571c0.098 0.025 0.225 0.061 0.365 0.117-0.117-0.029-0.242-0.061-0.371-0.092l-2.296 9.205c-0.174 0.432-0.615 1.08-1.609 0.834 0.035 0.051-2.552-0.637-2.552-0.637l-1.743 4.019 4.569 1.139c0.85 0.213 1.683 0.436 2.503 0.646l-1.453 5.834 3.507 0.875 1.439-5.772c0.958 0.26 1.888 0.5 2.798 0.726l-1.434 5.745 3.511 0.875 1.453-5.823c5.987 1.133 10.489 0.676 12.384-4.739 1.527-4.36-0.076-6.875-3.226-8.515 2.294-0.529 4.022-2.038 4.483-5.155zm-8.022 11.249c-1.085 4.36-8.426 2.003-10.806 1.412l1.928-7.729c2.38 0.594 10.012 1.77 8.878 6.317zm1.086-11.312c-0.99 3.966-7.1 1.951-9.082 1.457l1.748-7.01c1.982 0.494 8.365 1.416 7.334 5.553z" fill="#FFF"/>
+                        </g>
+                    </svg>
+                </p>
+            </a>
+        </div>
+        <div class="block">
+            <a class="cite" onclick="citation('popup-cite-2')" href="#cite-2" target="_blank"
+                rel="noopener noreferrer" data-testid="LinkButton"><p id="cite-ref-2" class="reference">
+                    Litecoin
+                    <svg style="vertical-align:sub" width="32px" height="32px" version="1.1" viewBox=".847 .876 329.25 329.26" xmlns="http://www.w3.org/2000/svg">
+                        <title>Litecoin</title>
+                        <path d="m330.1 165.5c0 90.922-73.705 164.63-164.63 164.63-90.922 0-164.63-73.707-164.63-164.63 0-90.921 73.706-164.63 164.63-164.63 90.92 0 164.63 73.706 164.63 164.63" fill="#bebebe"/>
+                        <path d="m295.15 165.5c0 71.613-58.057 129.68-129.67 129.68-71.616 0-129.68-58.062-129.68-129.68 0-71.619 58.061-129.68 129.68-129.68 71.618 0 129.67 58.057 129.67 129.68" fill="#bebebe"/>
+                        <path d="m155.85 209.48 10.693-40.264 25.316-9.249 6.297-23.663-0.215-0.587-24.92 9.104 17.955-67.608h-50.921l-23.481 88.23-19.605 7.162-6.478 24.395 19.59-7.156-13.839 51.998h135.52l8.688-32.362h-84.601" fill="#fff"/>
+                    </svg>
+                </p>
+            </a>
+        </div>
+        <div class="block">
+            <a class="cite" onclick="citation('popup-cite-3')" href="#cite-3" target="_blank"
+                rel="noopener noreferrer" data-testid="LinkButton"><p id="cite-ref-3" class="reference">
+                    Ethereum
+                    <svg style="vertical-align:sub" width="32px" height="32px" enable-background="new 0 0 1920 1920" version="1.1" viewBox="0 0 1079.8 1758.6" xmlns="http://www.w3.org/2000/svg">
+                        <title>Ethereum</title>
+                        <g transform="translate(-420.1,-80.7)">
+                         <polygon points="959.8 731 959.8 80.7 420.1 976.3" fill="#8a92b2"/>
+                         <polygon points="959.8 1295.4 959.8 731 420.1 976.3" fill="#62688f"/>
+                         <polygon points="959.8 731 1499.6 976.3 959.8 80.7" fill="#62688f"/>
+                         <polygon points="959.8 731 959.8 1295.4 1499.6 976.3" fill="#454a75"/>
+                         <polygon points="959.8 1397.6 420.1 1078.7 959.8 1839.3" fill="#8a92b2"/>
+                         <polygon points="1499.9 1078.7 959.8 1397.6 959.8 1839.3" fill="#62688f"/>
+                        </g>
+                    </svg>
+                </p>
+            </a>
+        </div>
+        <div id="references-drawer">
+            <div id="references-drawer-header">
+                <svg class="coin" id="popup-cite-1-coin" height="32px" width="32px" version="1.1" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+                    <title>Bitcoin</title>
+                    <g transform="translate(.0063088 -.0030198)">
+                     <path d="m63.033 39.744c-4.274 17.143-21.637 27.576-38.782 23.301-17.138-4.274-27.571-21.638-23.295-38.78 4.272-17.145 21.635-27.579 38.775-23.305 17.144 4.274 27.576 21.64 23.302 38.784z" fill="#f7931a"/>
+                     <path d="m46.103 27.444c0.637-4.258-2.605-6.547-7.038-8.074l1.438-5.768-3.511-0.875-1.4 5.616c-0.923-0.23-1.871-0.447-2.813-0.662l1.41-5.653-3.509-0.875-1.439 5.766c-0.764-0.174-1.514-0.346-2.242-0.527l4e-3 -0.018-4.842-1.209-0.934 3.75s2.605 0.597 2.55 0.634c1.422 0.355 1.679 1.296 1.636 2.042l-1.638 6.571c0.098 0.025 0.225 0.061 0.365 0.117-0.117-0.029-0.242-0.061-0.371-0.092l-2.296 9.205c-0.174 0.432-0.615 1.08-1.609 0.834 0.035 0.051-2.552-0.637-2.552-0.637l-1.743 4.019 4.569 1.139c0.85 0.213 1.683 0.436 2.503 0.646l-1.453 5.834 3.507 0.875 1.439-5.772c0.958 0.26 1.888 0.5 2.798 0.726l-1.434 5.745 3.511 0.875 1.453-5.823c5.987 1.133 10.489 0.676 12.384-4.739 1.527-4.36-0.076-6.875-3.226-8.515 2.294-0.529 4.022-2.038 4.483-5.155zm-8.022 11.249c-1.085 4.36-8.426 2.003-10.806 1.412l1.928-7.729c2.38 0.594 10.012 1.77 8.878 6.317zm1.086-11.312c-0.99 3.966-7.1 1.951-9.082 1.457l1.748-7.01c1.982 0.494 8.365 1.416 7.334 5.553z" fill="#FFF"/>
+                    </g>
+                </svg>
+                <svg class="coin" id="popup-cite-2-coin" width="32px" height="32px" version="1.1" viewBox=".847 .876 329.25 329.26" xmlns="http://www.w3.org/2000/svg">
+                    <title>Litecoin</title>
+                    <path d="m330.1 165.5c0 90.922-73.705 164.63-164.63 164.63-90.922 0-164.63-73.707-164.63-164.63 0-90.921 73.706-164.63 164.63-164.63 90.92 0 164.63 73.706 164.63 164.63" fill="#bebebe"/>
+                    <path d="m295.15 165.5c0 71.613-58.057 129.68-129.67 129.68-71.616 0-129.68-58.062-129.68-129.68 0-71.619 58.061-129.68 129.68-129.68 71.618 0 129.67 58.057 129.67 129.68" fill="#bebebe"/>
+                    <path d="m155.85 209.48 10.693-40.264 25.316-9.249 6.297-23.663-0.215-0.587-24.92 9.104 17.955-67.608h-50.921l-23.481 88.23-19.605 7.162-6.478 24.395 19.59-7.156-13.839 51.998h135.52l8.688-32.362h-84.601" fill="#fff"/>
+                </svg>
+                <svg class="coin" id="popup-cite-3-coin" width="32px" height="32px" enable-background="new 0 0 1920 1920" version="1.1" viewBox="0 0 1079.8 1758.6" xmlns="http://www.w3.org/2000/svg">
+                    <title>Ethereum</title>
+                    <g transform="translate(-420.1,-80.7)">
+                     <polygon points="959.8 731 959.8 80.7 420.1 976.3" fill="#8a92b2"/>
+                     <polygon points="959.8 1295.4 959.8 731 420.1 976.3" fill="#62688f"/>
+                     <polygon points="959.8 731 1499.6 976.3 959.8 80.7" fill="#62688f"/>
+                     <polygon points="959.8 731 959.8 1295.4 1499.6 976.3" fill="#454a75"/>
+                     <polygon points="959.8 1397.6 420.1 1078.7 959.8 1839.3" fill="#8a92b2"/>
+                     <polygon points="1499.9 1078.7 959.8 1397.6 959.8 1839.3" fill="#62688f"/>
+                    </g>
+                </svg>
+                <span class="references-drawer-title">Address</span>
+                <button type="button" class="close-button" title="Close" onclick="closeCitation()"></button>
+            </div>
+            <div id="references-drawer-line-dec"></div>
+            <div class="references-drawer-body" id="popup-cite-1">
+                <div class="wrapper">
+                    <p id="bitcoin">3MWH5ShAVf9w8WTPLxeiojdFXtrRGq2U8m</p>
+                    <div class="tooltip">
+                        <button class="copyButton" onclick="copy('bitcoin',0)" onmouseout="tooltip(0)">
+                            <span class="tooltiptext">Copy to Clipboard</span>
+                            <svg fill="#fff" width="32px" height="32px" version="1.1" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 0h24v24H0z" fill="none"/>
+                                <path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <img class="QRCode"
+                    srcset="btc.png"
+                    src="btc.png"
+                    alt="Astrid Wilde's Bitcoin Address"
+                    height="250" width="250"
+                    loading="lazy" />
+            </div>
+            <div class="references-drawer-body" id="popup-cite-2">
+                <div class="wrapper">
+                    <p id="litecoin">MJAA8XvxNezpxctvFy5ioA8hECr35Gxvxe</p>
+                    <div class="tooltip">
+                        <button class="copyButton" onclick="copy('litecoin',1)" onmouseout="tooltip(1)">
+                            <span class="tooltiptext">Copy to clipboard</span>
+                            <svg fill="#fff" width="32px" height="32px" version="1.1" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 0h24v24H0z" fill="none"/>
+                                <path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <img class="QRCode"
+                srcset="ltc.png"
+                src="ltc.png"
+                alt="Astrid Wilde's Litecoin Address"
+                height="250" width="250"
+                loading="lazy" />
+            </div>
+            <div class="references-drawer-body" id="popup-cite-3">
+                <div class="wrapper">
+                    <p id="ethereum">0x5335c4daA42cd0690adA256e6BE2a315E8F788F9</p>
+                    <div class="tooltip">
+                        <button class="copyButton" onclick="copy('ethereum',2)" onmouseout="tooltip(2)">
+                            <span class="tooltiptext">Copy to clipboard</span>
+                            <svg fill="#fff" width="32px" height="32px" version="1.1" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 0h24v24H0z" fill="none"/>
+                                <path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <img class="QRCode"
+                srcset="eth.png"
+                src="eth.png"
+                alt="Astrid Wilde's Ethereum Address"
+                height="250" width="250"
+                loading="lazy" />
+            </div>
+        </div>
+    </div>
+    <script>
+        const referencePopup = document.getElementById("references-drawer");
+        // Citation visibility toggle
+        function citation(num) {
+            disableScroll();
+            event.stopPropagation();
+            event.preventDefault();
+
+            // remove the 'visible' class from all citations
+            var references = document.getElementsByClassName("references-drawer-body");
+            for (i = 0; i < references.length; i++) {
+                references[i].classList.remove('visible');
+            }
+
+            // remove the 'visible' class from all coins
+            var coins = document.getElementsByClassName("coin");
+            for (i = 0; i < coins.length; i++) {
+                coins[i].classList.remove('visible');
+            }
+
+            // add 'visible' class to the citation that was clicked
+            var citation = document.getElementById(num);
+            citation.classList.add('visible');
+            var citationCoin = document.getElementById(num+'-coin');
+            citationCoin.classList.add('visible');
+
+            // make the reference-drawer visible
+            referencePopup.classList.add('visible');
+        }
+
+        function closeCitation() {
+            // Remove the class 'visible if it exists
+            referencePopup.classList.remove('visible');
+            // get all 'references-drawer-body' elements
+            var references = document.getElementsByClassName("references-drawer-body");
+            // loop through them
+            for (i = 0; i < references.length; i++) {
+                // Remove the class 'visible' if it exists
+                references[i].classList.remove('visible');
+            }
+            enableScroll();
+        }
+
+        // call this to Disable
+        function disableScroll() {
+            document.body.classList.add('stop-scrolling');
+        }
+
+        // call this to Enable
+        function enableScroll() {
+            document.body.classList.remove('stop-scrolling');
+        }
+
+        window.onclick = function(e){
+            hideOnClickOutside(referencePopup);
+        }
+
+        // hides the references-drawer if the user clicks an element outside of it
+        function hideOnClickOutside(element) {
+            const outsideClickListener = event => {
+                if (!element.contains(event.target) && isVisible(element)) {
+                    closeCitation();
+                    removeClickListener();
+                }
+            }
+            const removeClickListener = () => {
+                document.removeEventListener('click', outsideClickListener);
+            }
+            document.addEventListener('click', outsideClickListener);
+        }
+        const isVisible = elem => !!elem && !!( elem.offsetWidth || elem.offsetHeight || elem.getClientRects().length );
+    </script>
+    <script>
+        /*
+        * Copyer v1.0.0
+        * Copyright 2018 XED Technologies & Palash Bauri
+        * Released under the MIT License
+        * @preserve
+        */
+        function copy(containerid,num) {
+            var elt = document.getElementById(containerid);
+            if (document.selection) { // IE
+                if(elt.nodeName.toLowerCase() === "input"){
+                    document.getElementById(containerid).select();
+                    document.execCommand("copy");
+                }else{
+                    var range = document.body.createTextRange();
+                    range.moveToElementText(document.getElementById(containerid));
+                    range.select();
+                    document.execCommand("copy");
+                } 
+
+            } else if (window.getSelection) {
+                if(elt.nodeName.toLowerCase() === "input"){
+                    document.getElementById(containerid).select();
+                    document.execCommand("copy");
+                }else{
+                    var range_ = document.createRange();
+                    range_.selectNode(document.getElementById(containerid));
+                    window.getSelection().removeAllRanges();
+                    window.getSelection().addRange(range_);
+                    document.execCommand("copy");
+            }
+            }
+            var tooltip = document.getElementsByClassName("tooltiptext")[num];
+            tooltip.innerHTML = "Copied: " + "<b><i>" + getSelectionText() + "</i></b>";
+        }
+        function getSelectionText() {
+            var text = "";
+            if (window.getSelection) {
+                text = window.getSelection().toString();
+            } else if (document.selection && document.selection.type != "Control") {
+                text = document.selection.createRange().text;
+            }
+            return text;
+        }
+        function tooltip(num) {
+            var tooltip = document.getElementsByClassName("tooltiptext")[num];
+            tooltip.innerHTML = "Copy to Clipboard";
+        }
+    </script>
+</body>
+
+</html>
