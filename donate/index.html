@@ -215,6 +215,10 @@
         .QRCode {
             display:block;margin:auto;background-color:#fff;padding:5px;max-width:80%;height:auto;
         }
+        header a {
+            color:#fff;
+            text-decoration:none;
+        }
     </style>
 </head>
 
@@ -222,15 +226,17 @@
     <div id="page-wraper">
         <!-- Header Image -->
         <header>
-            <picture>
-                <source type="image/webp"
-                    srcset="../assets/images/author-image_170.webp, ../assets/images/author-image_255.webp 1.5x, ../assets/images/author-image_340.webp 2x" />
-                <img
-                    srcset="../assets/images/author-image_170.jpg, ../assets/images/author-image_255.jpg 1.5x, ../assets/images/author-image_340 2x"
-                    src="../assets/images/author-image_340.jpg" alt="Astrid Wilde" height="220" width="220"
-                    loading="lazy" />
-            </picture>
-            <h1>@astridwilde</h1>
+            <a href="https://astridwilde.com/">
+                <picture>
+                    <source type="image/webp"
+                        srcset="../assets/images/author-image_170.webp, ../assets/images/author-image_255.webp 1.5x, ../assets/images/author-image_340.webp 2x" />
+                    <img
+                        srcset="../assets/images/author-image_170.jpg, ../assets/images/author-image_255.jpg 1.5x, ../assets/images/author-image_340 2x"
+                        src="../assets/images/author-image_340.jpg" alt="Astrid Wilde" height="220" width="220"
+                        loading="lazy" />
+                </picture>
+                <h1>@astridwilde</h1>
+            </a>
         </header>
         <div class="block">
             <a class="cite" onclick="citation('popup-cite-1')" href="#cite-1" target="_blank"
