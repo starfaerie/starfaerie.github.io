@@ -106,6 +106,20 @@ a:link {
     object-fit: cover;
 }
 
+.header-left {
+    position: absolute;
+    text-align: left;
+    top:0;
+    left:0;
+    z-index: 5;
+}
+.header-left a {
+    color:#fff;text-decoration:none;margin-left:10px;
+}
+.header-left a b {
+    display:block;margin-left:10px;
+}
+
 .header-right {
     position: absolute;
     text-align: right;
