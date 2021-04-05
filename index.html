@@ -615,6 +615,10 @@
       $(".main-menu").on("click", "a.scroll", function(e) {
         e.preventDefault();
         showSection($(this).attr("href"), true);
+        var menu = document.getElementById("menu");
+        if (menu.classList.contains("open")) {
+            menu.classList.remove("open");
+        }
       });
 
       $(window).scroll(function() {
