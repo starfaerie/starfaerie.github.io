@@ -664,7 +664,7 @@ h1.article-header {
     text-align:left;
     padding:20px;
     line-height:170%;
-    word-break:break-word;
+    word-wrap:break-word;
 }
 .article-content svg.big-svg {
     text-align:center;
