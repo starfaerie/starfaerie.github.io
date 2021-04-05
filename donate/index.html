@@ -34,7 +34,7 @@
     <meta name="twitter:creator" content="@astridwilde1">
 
     <style>
-        body{text-align:center;margin-left:auto;margin-right:auto;background-color:#3d3a3a;color:#fff}header{margin-top:20px;margin-bottom:20px}header img{border-radius:50%;max-width:90%;height:auto}@media screen and (max-width:270px){header h1{font-size:12vw}}.block a{display:block;font-size:16px;font-weight:700;color:#3d3a3a;text-decoration:none;transition:all .3s;-webkit-transition:all .3s;-moz-transition:all .3s;-o-transition:all .3s;border:2px solid #fff;word-wrap:break-word;padding:16px}.block:hover a{color:#fff}.block a p{line-height:1.5;padding:0;margin:0}.block{z-index:0;overflow:hidden;margin:0 auto 16px auto;border:2px solid #fff;background-color:#fff;color:#3d3a3a;border-radius:0;width:700px;max-width:95%;transition:all .3s;-webkit-transition:all .3s;-moz-transition:all .3s;-o-transition:all .3s}.block:hover{background-color:#3d3a3a}#page-wraper{margin-top:20px;margin-bottom:50px}
+        body{text-align:center;margin-left:auto;margin-right:auto;background-color:#3d3a3a;color:#fff}header{margin-top:20px;margin-bottom:20px}header img{border-radius:50%;max-width:90%;height:auto}@media screen and (max-width:270px){header h1{font-size:12vw}}.block button{cursor:pointer;-webkit-appearance:none;width:100%;overflow:visible;text-transform:none;margin:0;border:none;font-size:16px;font-weight:700;color:#3d3a3a;background-color:#fff;text-decoration:none;transition:all .3s;-webkit-transition:all .3s;-moz-transition:all .3s;-o-transition:all .3s;word-wrap:break-word;padding:16px}.block:hover button{color:#fff;background-color:#3d3a3a;}.block button p{line-height:1.5;padding:0;margin:0}.block{z-index:0;overflow:hidden;margin:0 auto 16px auto;border:3px solid #fff;background-color:#fff;color:#3d3a3a;border-radius:0;width:700px;max-width:95%;transition:all .3s;-webkit-transition:all .3s;-moz-transition:all .3s;-o-transition:all .3s}.block:hover{background-color:#3d3a3a}#page-wraper{margin-top:20px;margin-bottom:50px}
         #references-drawer {
             opacity:0;
             visibility:hidden;
@@ -239,8 +239,8 @@
             </a>
         </header>
         <div class="block">
-            <a class="cite" onclick="citation('popup-cite-1')" href="#bitcoin" target="_blank"
-                rel="noopener noreferrer" data-testid="LinkButton"><p id="cite-ref-1" class="reference">
+            <button class="cite" onclick="citation('popup-cite-1')" data-testid="LinkButton">
+                <p id="cite-ref-1" class="reference">
                     Bitcoin
                     <svg style="vertical-align:sub" version="1.1" width="32px" height="32px" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
                         <g transform="translate(.0063088 -.0030198)">
@@ -249,11 +249,10 @@
                         </g>
                     </svg>
                 </p>
-            </a>
+            </button>
         </div>
         <div class="block">
-            <a class="cite" onclick="citation('popup-cite-2')" href="#litecoin" target="_blank"
-                rel="noopener noreferrer" data-testid="LinkButton"><p id="cite-ref-2" class="reference">
+            <button class="cite" onclick="citation('popup-cite-2')" data-testid="LinkButton"><p id="cite-ref-2" class="reference">
                     Litecoin
                     <svg style="vertical-align:sub" width="32px" height="32px" version="1.1" viewBox=".847 .876 329.25 329.26" xmlns="http://www.w3.org/2000/svg">
                         <title>Litecoin</title>
@@ -262,11 +261,10 @@
                         <path d="m155.85 209.48 10.693-40.264 25.316-9.249 6.297-23.663-0.215-0.587-24.92 9.104 17.955-67.608h-50.921l-23.481 88.23-19.605 7.162-6.478 24.395 19.59-7.156-13.839 51.998h135.52l8.688-32.362h-84.601" fill="#fff"/>
                     </svg>
                 </p>
-            </a>
+            </button>
         </div>
         <div class="block">
-            <a class="cite" onclick="citation('popup-cite-3')" href="#ethereum" target="_blank"
-                rel="noopener noreferrer" data-testid="LinkButton"><p id="cite-ref-3" class="reference">
+            <button class="cite" onclick="citation('popup-cite-3')" data-testid="LinkButton"><p id="cite-ref-3" class="reference">
                     Ethereum
                     <svg style="vertical-align:sub" width="32px" height="32px" enable-background="new 0 0 1920 1920" version="1.1" viewBox="0 0 1079.8 1758.6" xmlns="http://www.w3.org/2000/svg">
                         <title>Ethereum</title>
@@ -280,7 +278,7 @@
                         </g>
                     </svg>
                 </p>
-            </a>
+            </button>
         </div>
         <div id="references-drawer">
             <div id="references-drawer-header">
