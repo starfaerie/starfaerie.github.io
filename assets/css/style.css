@@ -743,12 +743,12 @@
     figure.snip-preview h3 {
         margin-top: 16px;
         margin-bottom: 5px;
-        color: #232323;
+        color: #222;
     }
     figure.snip-preview span {
         font-size: 16px;
         display: block;
-        color: #333;
+        color: #000;
     }
     figure.snip-preview i {
     position: relative !important;
