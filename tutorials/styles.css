@@ -231,14 +231,13 @@ a:link {
 
 .headertext {
     border-radius:15px 15px 0 0;
-    height:40px;color:#fff;
-    text-shadow:1px 1px #000;
+    height:40px;color:#000;
     font-size:20px;
     padding-top:23px;
     text-align:center;
     font-weight:700;
     line-height:1;
-    background:#de99ff;
+    background:#FFD2A8;
     background-image:linear-gradient(180deg,#FFD2A8 0,#7AD89B 100%);
     position: relative;
 }
@@ -516,9 +515,9 @@ a.articleNavButton:hover {
     display: block;
 }
 
-.Pacman {position:relative;float:left;border-radius:100px;border-top:30px solid #fcfc00;border-left:30px solid #fcfc00;border-right:30px solid transparent;border-bottom:30px solid #fcfc00;z-index:97;display:grid;}
-.PacmanBowLeft {position:relative;float:left;transform:rotate(160deg);-webkit-transform:rotate(160deg);border-top:10px solid transparent;border-right:20px solid #fc0000;border-bottom:10px solid transparent;z-index:98;display:grid;margin-left:-60px;}
-.PacmanBowRight {position:relative;float:left;transform:rotate(340deg);-webkit-transform:rotate(340deg);border-top:10px solid transparent;border-right:20px solid #fc0000;border-bottom:10px solid transparent;z-index:98;display:grid;margin-left:-60px;}
+.Pacman {position:relative;float:left;border-radius:100px;border-top:30px solid #fff;border-left:30px solid #fff;border-right:30px solid transparent;border-bottom:30px solid #fff;z-index:97;display:grid;}
+.PacmanBowLeft {position:relative;float:left;transform:rotate(160deg);-webkit-transform:rotate(160deg);border-top:10px solid transparent;border-right:20px solid pink;border-bottom:10px solid transparent;z-index:98;display:grid;margin-left:-60px;}
+.PacmanBowRight {position:relative;float:left;transform:rotate(340deg);-webkit-transform:rotate(340deg);border-top:10px solid transparent;border-right:20px solid pink;border-bottom:10px solid transparent;z-index:98;display:grid;margin-left:-60px;}
 .Moon {position:relative;float:left;width:70px;height:70px;background-color:transparent;border-radius:50%;box-shadow:25px 10px 0 0 #fff;z-index:98;display:grid;margin-left:-30px;margin-top:-20px;}
 /* Pencil CSS by Madhi https://codepen.io/mahdi_arjangi/pen/vYYyyKO */
 .Pencil {position:relative;float:left;width:10px;height:50px;background:#fff;position:relative;transform:rotate(330deg);margin-left:30px;z-index:98;}
