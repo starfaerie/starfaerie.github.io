@@ -40,47 +40,51 @@
     <script type="application/ld+json">
       {
         "@context":"http://schema.org",
-        "@type":"Person",
-        "name":"Astrid Wilde",
-        "alternateName": "Star Faerie",
-        "nationality": "United States",
-        "birthDate": "1993",
-        "url":"https://astridwilde.com",
-        "mainEntityOfPage": {
-          "@type": "WebPage",
-          "@id": "https://astridwilde.com/"
-        },
-        "sameAs":[
-          "https://twitter.com/astridwilde1",
-          "https://www.linkedin.com/in/astridwilde",
-          "https://www.artstation.com/starfaerie",
-          "https://www.youtube.com/channel/UCcZ15XKn1PHcxApyiKFqlqQ",
-          "https://github.com/starfaerie",
-          "https://www.twitch.tv/astridwilde",
-          "https://www.instagram.com/astridwilde"
-        ],
-        "image":"https://astridwilde.com/assets/images/author-image_340.jpg",
-        "description": "Technical Artist, Unity Editor Aficionado, Shader Math Enthusiast.",
-        "jobTitle": "Technical Artist",
-        "gender": "http://schema.org/Female",
-        "brand": "Astrid Wilde Tutorials",
-        "email": "astrid@astridwilde.com",
-        "alumniOf": {
-          "@type": "EducationalOrganization",
-          "name": "Boise State University",
-          "url": "https://www.boisestate.edu/",
-          "location": {
-            "@type": "Place",
-            "name": "Boise State University",
-            "address": {
-              "@type": "PostalAddress",
-              "addressLocality": "Boise", 
-              "postalCode": "83725",
-              "streetAddress": "1910 West University Drive"
-            }
+        "@graph":[
+          {
+            "@type":"Person",
+            "name":"Astrid Wilde",
+            "alternateName": "Star Faerie",
+            "nationality": "United States",
+            "birthDate": "1993",
+            "url":"https://astridwilde.com",
+            "mainEntityOfPage": {
+              "@type": "WebPage",
+              "@id": "https://astridwilde.com/"
+            },
+            "sameAs":[
+              "https://twitter.com/astridwilde1",
+              "https://www.linkedin.com/in/astridwilde",
+              "https://www.artstation.com/starfaerie",
+              "https://www.youtube.com/channel/UCcZ15XKn1PHcxApyiKFqlqQ",
+              "https://github.com/starfaerie",
+              "https://www.twitch.tv/astridwilde",
+              "https://www.instagram.com/astridwilde"
+            ],
+            "image":"https://astridwilde.com/assets/images/author-image_340.jpg",
+            "description": "Technical Artist, Unity Editor Aficionado, Shader Math Enthusiast.",
+            "jobTitle": "Technical Artist",
+            "gender": "http://schema.org/Female",
+            "brand": "Astrid Wilde Tutorials",
+            "email": "astrid@astridwilde.com",
+            "alumniOf": {
+              "@type": "EducationalOrganization",
+              "name": "Boise State University",
+              "url": "https://www.boisestate.edu/",
+              "location": {
+                "@type": "Place",
+                "name": "Boise State University",
+                "address": {
+                  "@type": "PostalAddress",
+                  "addressLocality": "Boise", 
+                  "postalCode": "83725",
+                  "streetAddress": "1910 West University Drive"
+                }
+              }
+            },
+            "knowsLanguage": ["de-DE","en-US"]
           }
-        },
-        "knowsLanguage": ["de-DE","en-US"]
+        ]
       }
     </script>
 

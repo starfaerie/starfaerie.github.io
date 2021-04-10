@@ -23,6 +23,16 @@
     <link rel="stylesheet" href="../webkit-scrollbar.css">
 
     <title>Astrid Wilde Tutorials - ColorPicker</title>
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "Article",
+          "name": "How to make a Color Picker in Unity",
+          "image": "https://astridwilde.com/tutorials/colorpicker/colorwheel_sai.jpg",
+          "datePublished": "2020-12-01T00:00:00+00:00"
+          ]
+        }
+    </script>
     <style>
         b.node {
             display: inline-block;
@@ -45,7 +55,7 @@
 
 <body>
     <!-- Social Media Links -->
-    <div class="header">
+    <header class="header">
         <div class="header-right">
             <a href="https://www.blender.org/" title="Blender">
                 <svg width="10.524mm" height="14.336mm" version="1.1" viewBox="0 0 9.5674 13.033"
@@ -169,7 +179,7 @@
                 </svg>
             </a>
         </div>
-    </div>
+    </header>
 
     <!-- Site Navigation -->
     <div id="navbar">
@@ -212,16 +222,19 @@
 
     <main class="content" id="content">
         <section>
+            <article itemscope itemtype="https://schema.org/ScholarlyArticle">
             <div class="mainbody">
                 <!-- Pencil -->
                 <div class="Pencil"></div>
-                <!-- Editors -->
-                <h1 class="article-header">
-                   How to make an in game Color Picker in Unity
+                <!-- Article -->
+                <header>
+                <h1 class="article-header" itemprop="name">
+                   How to make a Color Picker in Unity
                 </h1>
                 <h2 class="top-nav">
                     Final Results Preview:
                 </h2>
+            </header>
                 <div class="article-preview">
                     <picture>
                         <source srcset="colorwheel_borderless.webp"
@@ -239,7 +252,7 @@
                     </picture>
                 </div>
                 <div class="line-dec"></div>
-                <div class="article-content">
+                <div class="article-content" itemprop="articleBody">
                     <div class="tag" style="background-color:#0b8a00;">
                         <abbr title="User Interface">UI</abbr>
                     </div>
@@ -249,7 +262,8 @@
                     <div class="tag" style="background-color:#101010;">
                         Shader Graph
                     </div>
-                    <time datetime="2020-12-01">December 01, 2020</time>
+                    <time datetime="2020-12-01" itemProp="datePublished">December 01, 2020</time>
+                    <span itemscope itemtype="http://schema.org/Person"><span itemprop="author"><a rel="author" href="https://astridwilde.com/">Astrid Wilde</a></span></span>
                     <h2 class="top-nav">
                         Navigation:
                     </h2>
@@ -1116,6 +1130,7 @@
                     </span>
                 </div>
             </div>
+        </article>
         </section>
 
         <section>
