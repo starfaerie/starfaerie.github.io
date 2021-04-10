@@ -23,15 +23,113 @@
     <link rel="stylesheet" href="../webkit-scrollbar.css">
 
     <title>How to make a Color Picker in Unity</title>
+    <!-- Rich Results for Google https://search.google.com/test/rich-results -->
+    <!-- HowTo Rich Text: https://developers.google.com/search/docs/data-types/how-to -->
+    <!-- Google Search Console: https://search.google.com/u/1/search-console?resource_id=sc-domain:astridwilde.com -->
+    <html>
     <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "HowTo",
+      "name": "How to make a Color Picker in Unity",
+      "description": "Unity doesn't have a built in ColorPicker utility, but anyone can learn to make one themselves. This guide will help you develop a Color Picker with beautiful results, like our example Color Picker seen here.",
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://astridwilde.com/tutorials/colorpicker/colorwheel_sai.jpg",
+        "height": "250",
+        "width": "250"
+      },
+      "estimatedCost": {
+        "@type": "MonetaryAmount",
+        "currency": "USD",
+        "value": "0"
+      },
+      "tool": [
         {
-          "@context": "https://schema.org",
-          "@type": "Article",
-          "name": "How to make a Color Picker in Unity",
-          "image": "https://astridwilde.com/tutorials/colorpicker/colorwheel_sai.jpg",
-          "datePublished": "2020-12-01T00:00:00+00:00"
-          ]
+          "@type": "HowToTool",
+          "name": "Unity"
+        }, {
+          "@type": "HowToTool",
+          "name": "Universal Rendering Pipeline"
         }
+      ],
+      "step": [
+        {
+          "@type": "HowToStep",
+          "url": "https://docs.unity3d.com/Packages/com.unity.render-pipelines.universal@7.1/manual/InstallURPIntoAProject.html",
+          "name": "Install the Universal Rendering Pipeline",
+          "itemListElement": [{
+            "@type": "HowToTip",
+            "text": "We recommend following this tutorial in an empty Unity project your first time."
+          }, {
+            "@type": "HowToDirection",
+            "text": "In Unity, open your Project."
+          }, {
+            "@type": "HowToDirection",
+            "text": "In the top navigation bar, select Window > Package Manager to open the Package Manager window."
+          }, {
+            "@type": "HowToDirection",
+            "text": "Select the All tab. This tab displays the list of available packages for the version of Unity that you are currently running."
+          }, {
+            "@type": "HowToDirection",
+            "text": "Select 'Universal RP' from the list of packages."
+          }, {
+            "@type": "HowToDirection",
+            "text": "In the bottom right corner of the Package Manager window, select Install. Unity installs URP directly into your Project."
+          }],
+          "image": {
+            "@type": "ImageObject",
+            "url": "https://example.com/photos/1x1/photo-step1.jpg",
+            "height": "406",
+            "width": "305"
+          }
+        }, {
+          "@type": "HowToStep",
+          "name": "Creating a Universal Render Pipeline Asset",
+          "url": "https://docs.unity3d.com/Packages/com.unity.render-pipelines.universal@7.1/manual/InstallURPIntoAProject.html",
+          "itemListElement": [{
+            "@type": "HowToTip",
+            "text": "Before you can start using URP, you need to configure it. To do this, you need to create a Scriptable Render Pipeline Asset and adjust your Graphics settings."
+          }, {
+            "@type": "HowToDirection",
+            "text": "In the Unity Editor, open the Project window."
+          }, {
+            "@type": "HowToDirection",
+            "text": "Right-click in the Project window, and select Create > Rendering > Universal Render Pipeline > Pipeline Asset. Alternatively, navigate to the menu bar at the top, and select Assets > Create > Rendering > Universal Render Pipeline > Pipeline Asset."
+          }, {
+            "@type": "HowToTip",
+            "text": "You can either leave the default name for the new Universal Render Pipeline Asset, or type a new one."
+          }],
+          "image": {
+            "@type": "ImageObject",
+            "url": "https://example.com/photos/1x1/photo-step2.jpg",
+            "height": "406",
+            "width": "305"
+          }
+        }, {
+          "@type": "HowToStep",
+          "name": "Prepare your and apply mortar (or choose adhesive tile)",
+          "url": "https://example.com/kitchen#step3",
+          "itemListElement": [{
+            "@type": "HowToTip",
+            "text": "To use URP, you need to add the newly created Universal Render Pipeline Asset to your Graphics settings in Unity. If you don't, Unity still tries to use the Built-in render pipeline."
+          }, {
+            "@type": "HowToDirection",
+            "text": "Navigate to Edit > Project Settings... > Graphics."
+          }, {
+            "@type": "HowToDirection",
+            "text": "In the Scriptable Render Pipeline Settings field, add the Universal Render Pipeline Asset you created earlier. When you add the Universal Render Pipeline Asset, the available Graphics settings immediately change. Your Project is now using URP."
+          }],
+          "image": {
+            "@type": "ImageObject",
+            "url": "https://example.com/photos/1x1/photo-step3.jpg",
+            "height": "406",
+            "width": "305"
+          }
+        }
+      ],
+      "totalTime": "PT1H30M"
+    }
     </script>
     <style>
         b.node {
