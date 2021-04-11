@@ -827,6 +827,10 @@ cite {
     background-color:#4dbe9c;
 }
 
+.reference .cite svg text tspan {
+    fill:#fff;
+}
+
 #references-drawer {
     opacity:0;
     visibility:hidden;
