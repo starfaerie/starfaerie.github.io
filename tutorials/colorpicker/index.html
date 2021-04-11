@@ -634,14 +634,14 @@
                                             <circle cx="269.34" cy="540.72" r="20"/>
                                             <circle cx="539.7" cy="270.36" r="20" fill="#fff"/>
                                             <g font-family="Tahoma" font-size="32px" font-weight="bold">
-                                            <text x="177.16867" y="100.36145" style="line-height:1.25" xml:space="preserve"><tspan x="177.16867" y="100.36145">Blue (0,0,1)</tspan></text>
-                                            <text x="-18.952459" y="312.33514" style="line-height:1.25" xml:space="preserve"><tspan x="-18.952459" y="312.33514">Magenta (1,0,1)</tspan></text>
-                                            <text x="343.1091" y="236.20097" style="line-height:1.25" xml:space="preserve"><tspan x="343.1091" y="236.20097">White (1,1,1)</tspan></text>
-                                            <text x="57.803261" y="724.64539" style="line-height:1.25" xml:space="preserve"><tspan x="57.803261" y="724.64539">Red (1,0,0)</tspan></text>
-                                            <text x="440.20139" y="724.78088" style="line-height:1.25" xml:space="preserve"><tspan x="440.20139" y="724.78088">Yellow (1,1,0)</tspan></text>
-                                            <text x="639.74725" y="610.64337" style="line-height:1.25" xml:space="preserve"><tspan x="639.74725" y="610.64337">Green (0,1,0)</tspan></text>
-                                            <text x="587.19623" y="101.22481" style="line-height:1.25" xml:space="preserve"><tspan x="587.19623" y="101.22481">Cyan (0,1,1)</tspan></text>
-                                            <text x="284.8877" y="524.05798" style="line-height:1.25" xml:space="preserve"><tspan x="284.8877" y="524.05798">Black (0,0,0)</tspan></text>
+                                            <text x="177.16867" y="100.36145" style="line-height:1.25" xml:space="preserve"><tspan class="white" x="177.16867" y="100.36145">Blue (0,0,1)</tspan></text>
+                                            <text x="-18.952459" y="312.33514" style="line-height:1.25" xml:space="preserve"><tspan class="white" x="-18.952459" y="312.33514">Magenta (1,0,1)</tspan></text>
+                                            <text x="343.1091" y="236.20097" style="line-height:1.25" xml:space="preserve"><tspan class="white" x="343.1091" y="236.20097">White (1,1,1)</tspan></text>
+                                            <text x="57.803261" y="724.64539" style="line-height:1.25" xml:space="preserve"><tspan class="white" x="57.803261" y="724.64539">Red (1,0,0)</tspan></text>
+                                            <text x="440.20139" y="724.78088" style="line-height:1.25" xml:space="preserve"><tspan class="white" x="440.20139" y="724.78088">Yellow (1,1,0)</tspan></text>
+                                            <text x="639.74725" y="610.64337" style="line-height:1.25" xml:space="preserve"><tspan class="white" x="639.74725" y="610.64337">Green (0,1,0)</tspan></text>
+                                            <text x="587.19623" y="101.22481" style="line-height:1.25" xml:space="preserve"><tspan class="white" x="587.19623" y="101.22481">Cyan (0,1,1)</tspan></text>
+                                            <text x="284.8877" y="524.05798" style="line-height:1.25" xml:space="preserve"><tspan class="white" x="284.8877" y="524.05798">Black (0,0,0)</tspan></text>
                                             </g>
                                             </g>
                                         </svg>[22]
@@ -674,16 +674,15 @@
                                 The distance from the middle of our cylander is the 'Saturation' value, which determines the strength of the color value on a scale of 0 to 1 with 0 being white and 1 being the full color value of a given hue. The 'Hue' value is determined by the angle around the cylander. How far up on our cylander determines the darkness or 'Value' of the color, with a value of 0 being black at the bottom and 1 at the top being the full color. Occasionally you might encounter 'HSL' or "Hue, Saturation, Lightness" colorspace, which is identical to this scale except that saturation goes from black to full color and then back to white instead of black to the full color value, which on the HSL scale is only half way up on the lightness scale.
                                 To be clear, HSV colorspace doesn't create any new colors, it's simply a rotated version of our friendly RGB color cube. If we project every point on our cube to a plane below we can start to see the 'Hue' portion of this colorspace become clear.
                             </p>
-                            <div class="article-preview">
-                                <sup id="cite-ref-24" class="reference">
-                                    <a class="cite" onclick="citation('popup-cite-24')" href="#cite-24">
+                            <sup id="cite-ref-24" class="reference article-preview">
+                                <a class="cite" onclick="citation('popup-cite-24')" href="#cite-24">
                                     <svg role="img" class="double-svg" width="225.13" height="276.82" enable-background="new 1421.5273 -611.335 350 700" version="1.1" viewBox="1421.5 -611.34 225.13 276.82" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                         <g transform="translate(-39.766 -44.894)">
                                         <polyline points="1679 -355.16 1592.9 -385.55 1487.8 -369.51 1468.7 -323.06 1554.8 -292.67 1659.9 -308.72 1679 -355.16" fill="rgba(1,1,1,0.1)" stroke="#58595b" stroke-dasharray="5.6, 2.8" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.4"/>
                                         <line x1="1593.2" x2="1679.2" y1="-458.36" y2="-503.71" fill="none" stroke="#bcbec0" stroke-dasharray="1, 2.5" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.4"/>
-                                        <g enable-background="new    ">
+                                        <g>
                                         <defs>
-                                        <polygon id="g" points="1670 -309.15 1660.9 -304.44 1649.8 -308.28 1658.9 -313" enable-background="new    "/>
+                                        <polygon id="g" points="1670 -309.15 1660.9 -304.44 1649.8 -308.28 1658.9 -313" />
                                         </defs>
                                         <clipPath id="f">
                                         <use width="100%" height="100%" overflow="visible" xlink:href="#g"/>
@@ -693,9 +692,9 @@
                                         <path d="m1654.6-310.53c1.1836-0.6123 2.8467-0.9614 4.5752-1.0376 1.7344-0.0747 3.5234 0.1294 4.9805 0.6309 1.4492 0.4995 2.2891 1.2002 2.457 1.9297 0.1748 0.7324-0.3105 1.4868-1.4941 2.0986-1.1895 0.6152-2.8457 0.9668-4.5801 1.041-1.7227 0.0737-3.5244-0.1299-4.9746-0.6294-1.4561-0.5015-2.2832-1.2031-2.4629-1.9316-0.1689-0.73 0.3086-1.4868 1.499-2.1016m9.8223-0.5444c-3.0879-1.0635-7.627-0.8667-10.144 0.4336l0.1611 0.0557 0.1602 0.0552-0.1602-0.0552-0.1611-0.0557c-2.5215 1.3037-2.0703 3.2188 1.0186 4.2822 3.0801 1.061 7.627 0.8667 10.148-0.437 2.5166-1.3003 2.0576-3.2182-1.0234-4.2788"/>
                                         </g>
                                         </g>
-                                        <g enable-background="new    ">
+                                        <g>
                                         <defs>
-                                        <polygon id="e" points="1497.9 -369.94 1488.8 -365.23 1477.7 -369.07 1486.8 -373.79" enable-background="new    "/>
+                                        <polygon id="e" points="1497.9 -369.94 1488.8 -365.23 1477.7 -369.07 1486.8 -373.79" />
                                         </defs>
                                         <clipPath id="d">
                                         <use width="100%" height="100%" overflow="visible" xlink:href="#e"/>
@@ -705,9 +704,9 @@
                                         <path d="m1482.5-371.32c1.1846-0.6118 2.8457-0.9668 4.5752-1.0381 1.7275-0.0762 3.5244 0.1299 4.9736 0.6289 1.457 0.502 2.2891 1.2002 2.4639 1.9326 0.1738 0.7261-0.3096 1.4863-1.4932 2.0986-1.1846 0.6118-2.8535 0.9639-4.5752 1.0376-1.7354 0.0742-3.5234-0.1299-4.9814-0.6313-1.4492-0.499-2.2881-1.2002-2.457-1.9297-0.1797-0.729 0.3105-1.4863 1.4941-2.0986m9.8154-0.5469c-3.0801-1.061-7.627-0.8667-10.144 0.4336l0.168 0.0581 0.1602 0.0552-0.1602-0.0552-0.168-0.0581c-2.5156 1.3008-2.0566 3.2188 1.0234 4.2793 3.0889 1.0635 7.6279 0.8667 10.144-0.4336 2.5158-1.3007 2.0646-3.2163-1.0243-4.2793"/>
                                         </g>
                                         </g>
-                                        <g enable-background="new    ">
+                                        <g>
                                         <defs>
-                                        <polygon id="c2" points="1478.9 -323.5 1469.8 -318.78 1458.6 -322.63 1467.7 -327.34" enable-background="new    "/>
+                                        <polygon id="c2" points="1478.9 -323.5 1469.8 -318.78 1458.6 -322.63 1467.7 -327.34" />
                                         </defs>
                                         <clipPath id="b2">
                                         <use width="100%" height="100%" overflow="visible" xlink:href="#c2"/>
@@ -717,9 +716,9 @@
                                         <path d="m1463.5-324.87c1.1836-0.6118 2.8398-0.9634 4.5742-1.0376 1.7285-0.0767 3.5234 0.1299 4.9736 0.6289 1.457 0.502 2.29 1.2002 2.4639 1.9316 0.1689 0.73-0.3086 1.4868-1.4932 2.0986-1.1904 0.6152-2.8525 0.9644-4.5811 1.041-1.7285 0.0713-3.5234-0.1299-4.9795-0.6313-1.4502-0.4995-2.2842-1.2031-2.458-1.9297-0.1747-0.7319 0.3097-1.4868 1.5001-2.1015m9.8154-0.5469c-3.0801-1.061-7.627-0.8662-10.144 0.4341l0.1602 0.0552 0.168 0.0576-0.168-0.0576-0.1602-0.0552c-2.5215 1.3037-2.0625 3.2217 1.0176 4.2822 3.0889 1.0635 7.6279 0.8662 10.15-0.437 2.5157-1.3003 2.0645-3.2158-1.0244-4.2793"/>
                                         </g>
                                         </g>
-                                        <g enable-background="new    ">
+                                        <g>
                                         <defs>
-                                        <polygon id="a2" points="1564.9 -293.1 1555.8 -288.39 1544.6 -292.23 1553.8 -296.95" enable-background="new    "/>
+                                        <polygon id="a2" points="1564.9 -293.1 1555.8 -288.39 1544.6 -292.23 1553.8 -296.95" />
                                         </defs>
                                         <clipPath id="l">
                                         <use width="100%" height="100%" overflow="visible" xlink:href="#a2"/>
@@ -729,9 +728,9 @@
                                         <path d="m1549.5-294.48c1.1895-0.6147 2.8516-0.9644 4.5801-1.0405 1.7285-0.0718 3.5234 0.1294 4.9805 0.6313 1.4502 0.499 2.2832 1.2026 2.457 1.9292 0.1758 0.7324-0.3096 1.4868-1.499 2.1016-1.1846 0.6123-2.8457 0.9668-4.5752 1.0381-1.7275 0.0767-3.5234-0.1299-4.9736-0.6294-1.4561-0.5015-2.2891-1.1997-2.4639-1.9316-0.1739-0.7267 0.3095-1.4869 1.4941-2.0987m9.8222-0.5449c-3.0879-1.063-7.6211-0.8691-10.144 0.4341l0.1611 0.0557 0.1602 0.0552-0.1602-0.0552-0.1611-0.0557c-2.5166 1.3008-2.0645 3.2163 1.0244 4.2793 3.0811 1.0615 7.627 0.8667 10.143-0.4341 2.5225-1.3033 2.0587-3.2183-1.0234-4.2793"/>
                                         </g>
                                         </g>
-                                        <g enable-background="new    ">
+                                        <g>
                                         <defs>
-                                        <polygon id="k" points="1689.1 -355.59 1680 -350.87 1668.8 -354.72 1677.9 -359.43" enable-background="new    "/>
+                                        <polygon id="k" points="1689.1 -355.59 1680 -350.87 1668.8 -354.72 1677.9 -359.43" />
                                         </defs>
                                         <clipPath id="j">
                                         <use width="100%" height="100%" overflow="visible" xlink:href="#k"/>
@@ -741,9 +740,9 @@
                                         <path d="m1673.7-356.96c1.1895-0.6147 2.8447-0.9663 4.5801-1.041 1.7217-0.0732 3.5234 0.1304 4.9727 0.6294 1.457 0.5015 2.2842 1.2031 2.4658 1.9316 0.167 0.7295-0.3105 1.4868-1.501 2.1016-1.1836 0.6123-2.8525 0.9644-4.5742 1.0381-1.7354 0.0742-3.5244-0.1299-4.9814-0.6318-1.4492-0.499-2.2881-1.1997-2.457-1.9292-0.1798-0.7291 0.3105-1.4869 1.495-2.0987m9.8155-0.5474c-3.0811-1.0605-7.6221-0.8691-10.144 0.4346l0.167 0.0576 0.1611 0.0552-0.1611-0.0552-0.167-0.0576c-2.5166 1.3003-2.0576 3.2183 1.0234 4.2793 3.0879 1.063 7.627 0.8662 10.144-0.4346 2.5215-1.3032 2.0644-3.2158-1.0234-4.2793"/>
                                         </g>
                                         </g>
-                                        <g enable-background="new    ">
+                                        <g>
                                         <defs>
-                                        <polygon id="i" points="1603.1 -385.98 1593.9 -381.27 1582.8 -385.12 1591.9 -389.83" enable-background="new    "/>
+                                        <polygon id="i" points="1603.1 -385.98 1593.9 -381.27 1582.8 -385.12 1591.9 -389.83" />
                                         </defs>
                                         <clipPath id="h">
                                         <use width="100%" height="100%" overflow="visible" xlink:href="#i"/>
@@ -794,8 +793,7 @@
                                         <circle cx="1554.5" cy="-439.98" r="7" fill="#f0f"/>
                                         <circle cx="1554.5" cy="-439.98" r="7" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width=".42"/>
                                         </g>
-                                    </svg>
-                                    <svg role="img" class="double-svg" width="294.42" height="256.91" enable-background="new 1421.5273 -611.335 350 700" version="1.1" viewBox="1421.5 -611.34 294.42 256.91" xmlns="http://www.w3.org/2000/svg">
+                                    </svg><svg role="img" class="double-svg" width="294.42" height="256.91" enable-background="new 1421.5273 -611.335 350 700" version="1.1" viewBox="1421.5 -611.34 294.42 256.91" xmlns="http://www.w3.org/2000/svg">
                                         <g transform="translate(-5.1182 -432.77)">
                                         <g fill="none" stroke-linecap="round" stroke-linejoin="round">
                                         <g stroke="#bcbec0" stroke-dasharray="2.8, 2.8" stroke-width="1.4">
@@ -841,9 +839,8 @@
                                         <polyline points="1503.9 -25.861 1489.9 -50.11 1531.9 -122.86 1615.9 -122.86 1657.9 -50.11" fill="none" stroke="#58595b" stroke-dasharray="5.6, 2.8" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.4"/>
                                         </g>
                                     </svg>[24]
-                                    </a>
-                                </sup>
-                            </div>
+                                </a>
+                            </sup>
                             <p>
                                 This way of re-arranging RGB Colorspace was first proposed at SIGGRAPH in 1978 by Alvy Ray Smith.<sup id="cite-ref-25" class="reference"><a class="cite" onclick="citation('popup-cite-25')" href="#cite-25">[25]</a></sup>
                                 What's the purpose of doing this? Well, for our purposes today it makes for much more intuitive UI for artists. Various kinds of HSV color pickers have been around since the early 90s and were made popular by editing programs like

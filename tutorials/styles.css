@@ -722,19 +722,19 @@ h2.top-nav {
     text-align:center;
 }
 
-div.article-preview {
+.article-preview {
     display:table;
     text-align:center;
     margin-left:auto;
     margin-right:auto;
 }
 
-div.article-preview sup.reference a.cite {
+sup.reference a.cite {
     display:table-cell;
     text-align:center;
 }
 
-div.article-preview picture {
+.article-preview picture {
     display:table-cell;
     margin-left:10px;
     margin-right:10px;
@@ -827,7 +827,7 @@ cite {
     background-color:#4dbe9c;
 }
 
-.reference .cite svg text tspan {
+.reference .cite svg text tspan.white {
     fill:#fff;
 }
 
