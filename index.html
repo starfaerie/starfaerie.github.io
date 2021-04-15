@@ -161,13 +161,6 @@
 
   <body>
     <div id="page-wraper">
-      <div class="carousel slide carousel-fade" data-ride="carousel" data-wrap="true" data-pause="false">
-        <div class="carousel-inner">
-          <div class="carousel-item active" data-interval="5000"></div>
-          <div class="carousel-item" data-interval="5000"></div>
-          <div class="carousel-item" data-interval="5000"></div>
-        </div>
-      </div>
       <!-- Sidebar Menu -->
       <aside class="responsive-nav">
         <!-- Menu Toggle Button -->
@@ -233,7 +226,34 @@
 
       <section class="section about-me" data-section="about-me">
         <div class="container">
-          <div class="section-heading">
+          <div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel" data-wrap="true" data-pause="false">
+            <ol class="carousel-indicators">
+              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel" data-slide-to="1"></li>
+              <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-interval="5000">
+                <img height="auto" width="100%" class="d-block" src="assets\images\grass_4k.jpg" alt="First slide">
+              </div>
+              <div class="carousel-item" data-interval="5000">
+                <img height="auto" width="100%" class="d-block" src="https://ununsplash.imgix.net/photo-1417021423914-070979c8eb34?q=75&fm=jpg&s=55746bd56e02a131b1e48c12196ea866" alt="Second slide">
+              </div>
+              <div class="carousel-item" data-interval="5000">
+                <img height="auto" width="100%" class="d-block" src="https://unsplash.imgix.net/photo-1414073875831-b47709631146?q=75&fm=jpg&s=731b6d5150eea8bafa63ae8194e72ebd" alt="Third slide">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+          <!-- Heading -->
+          <header class="section-heading">
             <h2>About Me</h2>
             <div class="line-dec"></div>
             <span>        
@@ -241,18 +261,25 @@
               <br>
               📚 Ask me about Unity Editor extensions
             </span>
-          </div>
+          </header>
           <div class="left-image-post">
             <div class="row">
               <div class="col-md-6">
                 <div class="left-image">
                   <a href="#" title="View my Resume" tabindex="-1">
-                    <picture>
-                      <source type="image/webp"
-                      srcset="assets/images/variety_662.webp, assets/images/variety_1324.webp 2x" />
-                      <img srcset="assets/images/variety_662.jpg, assets/images/variety_1324.jpg 2x"
-                          src="assets/images/variety_662.jpg" alt="Resume" loading="lazy" />
-                    </picture>
+                    <svg style="margin:auto;display:block;max-height:200px" width="auto" version="1.1" viewBox="0 0 1293 1287.6" xmlns="http://www.w3.org/2000/svg">
+                      <g transform="translate(-9.3875 -1.0736)" fill="none" stroke="#a43f49" stroke-width="30">
+                       <g stroke-linecap="round" stroke-linejoin="round">
+                        <path d="m25.57 105.15-0.98178 844.99m965.18-844.99c1.7563-86.057 3.5125-86.898-481.22-88.654-484.73-1.7562-484.73-0.91571-482.97 88.654m963.21 844.99c0 353.01 3.5125 321.4-481.22 323.15-484.73 1.7562-484.73 0-482.97-323.15"/>
+                        <path d="m147.53 312.62h632.26"/>
+                        <path d="m145.77 579.57h460.14"/>
+                        <path d="m147.53 848.28h277.49"/>
+                       </g>
+                       <path fill="#fff" d="m732.38 980 8.7814-173.87 396.92-651.58 149.28 96.595-396.92 642.8z" stroke-linejoin="round"/>
+                       <path d="m741.16 806.12 149.28 87.814"/>
+                       <path d="m1088.9 224.8 156.31 96.595"/>
+                      </g>
+                    </svg>
                   </a>
                 </div>
               </div>
@@ -285,12 +312,16 @@
               <div class="col-md-6">
                 <div class="right-image">
                   <a href="tutorials/" title="View my Tutorials" tabindex="-1">
-                    <picture>
-                      <source type="image/webp"
-                      srcset="assets/images/tutorial_800.webp, assets/images/tutorial_1600.webp 2x" />
-                      <img srcset="assets/images/tutorial_800.jpg, assets/images/tutorial_1600.jpg 2x"
-                          src="assets/images/tutorial_800.jpg" alt="Tutorials" loading="lazy" />
-                    </picture>
+                    <svg style="margin:auto;display:block;max-width:462px" height="auto" version="1.1" viewBox="0 0 262.77 149.31" xmlns="http://www.w3.org/2000/svg">
+                      <g transform="translate(33.073 -54.94)">
+                          <path d="m-29.073 58.948v141.31h254.77l-0.55325-140.73z" fill="#a43f49"/>
+                          <path d="m-29.073 200.25v-141.31l254.22 0.57093 0.55326 140.73z" fill="none" stroke="#202020" stroke-linejoin="round" stroke-width="8"/>
+                          <path d="m5.5268 161.19 187.95-0.26661" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="3.9956"/>
+                          <circle cx="4.5016" cy="160.92" r="4.25" fill="#f00"/>
+                          <circle cx="98.132" cy="122.11" r="22" fill="#f00"/>
+                          <path d="m88.976 109.08v25.391l23.787-12.294z" fill="#fff"/>
+                      </g>
+                  </svg>
                   </a>
                 </div>
               </div>

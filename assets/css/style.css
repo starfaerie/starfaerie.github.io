@@ -22,35 +22,17 @@
     }
 
     .carousel {
-        z-index: -99;
+        width:100%;
+        height:100%;
+        padding-top:20px;
     }
     .carousel .carousel-item {
-        position: fixed;
-        width: 100%;
-        height: 100%;
+        position: relative;
     }
-    .carousel-item:nth-child(1) {
-        background: url(../images//grass_4k.jpg) no-repeat center center fixed;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
+    .carousel .carousel-item img {
+        width:100%;
+        height:auto;
     }
-    .carousel-item:nth-child(2) {
-        background: url(https://ununsplash.imgix.net/photo-1417021423914-070979c8eb34?q=75&fm=jpg&s=55746bd56e02a131b1e48c12196ea866) no-repeat center center fixed;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-    }
-    .carousel-item:nth-child(3) {
-        background: url(https://unsplash.imgix.net/photo-1414073875831-b47709631146?q=75&fm=jpg&s=731b6d5150eea8bafa63ae8194e72ebd) no-repeat center center fixed;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-    }
-
     input,
     select,
     textarea {
@@ -72,6 +54,7 @@
 
     img {
         width: 100%;
+        height:auto;
         overflow: hidden;
     }
 
@@ -353,7 +336,6 @@
         line-height: 60px;
     }
 
-
     /* Section */
 
     .section {
@@ -479,9 +461,18 @@
 
     /* Left & Right Post */
 
+    @media screen and (max-width:768px) {
+        .right-text {
+            margin:20px auto 0 auto;
+        }
+        .left-text {
+            margin:0 auto 20px auto;
+        }
+    }
+
     .right-image-post {
-        margin-top: 60px;
-        padding-top: 60px;
+        margin-top: 40px;
+        padding-top: 40px;
         border-top: 2px solid rgba(250, 250, 250, 0.1);
     }
 
