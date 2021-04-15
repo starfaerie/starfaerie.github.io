@@ -480,10 +480,6 @@
     }
     a#tutorial-img:hover svg circle#grow {
         fill:#f00;
-        r:13%;
-    }
-    a#tutorial-img:hover svg circle#shift {
-        cx:70%;
     }
 
     /* Left & Right Post */
