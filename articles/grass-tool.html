@@ -3,11 +3,11 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="This tool allows artists to create in game tooltips without writing code. It supports custom fonts and fade in/fade out animations. The editor features a visual preview that mimics the in game popup." />
+    <meta name="description" content="A GPU-based real-time grass placement tool for Unity by Astrid Wilde." />
     <meta name="author" content="Astrid Wilde" />
-    <link rel="canonical" href="https://astridwilde.com/articles/tooltip.html" />
+    <link rel="canonical" href="https://astridwilde.com/articles/grass-tool.html" />
 
-    <title>Astrid Wilde - Tooltip</title>
+    <title>Astrid Wilde - Grass Tool</title>
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="../vendor/bootstrap/css/bootstrap.min.css" />
@@ -18,14 +18,14 @@
 
     <!-- Facebook Open Graph -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://astridwilde.com/articles/tooltip.html">
+    <meta property="og:url" content="https://astridwilde.com/articles/grass-tool.html">
     <meta property="og:title" content="Astrid Wilde">
-    <meta property="og:image" content="https://astridwilde.com/assets/images/tooltip_FB1.jpg">
+    <meta property="og:image" content="https://astridwilde.com/assets/images/grasstool.png">
     <meta property="og:image:type" content="image/jpeg">
-    <meta property="og:image:width" content="1200"> <!-- Recommended width:1200 -->
-    <meta property="og:image:height" content="630"> <!-- Recommended height:630 -->
-    <meta property="og:image:alt" content="A visual preview of the tooltip editor">
-    <meta property="og:description" content="This tool allows artists to create in game tooltips without writing code. It supports custom fonts and fade in/fade out animations. The editor features a visual preview that mimics the in game popup."> <!-- Fewer than 200 characters -->
+    <meta property="og:image:width" content="305"> <!-- Recommended width:1200 -->
+    <meta property="og:image:height" content="368"> <!-- Recommended height:630 -->
+    <meta property="og:image:alt" content="The Grass Tool Unity Editor">
+    <meta property="og:description" content="A GPU-based real-time grass placement tool for Unity by Astrid Wilde."> <!-- Fewer than 200 characters -->
     <meta property="og:site_name" content="Astrid Wilde">
     <meta property="og:locale" content="en_US">
 
@@ -100,61 +100,41 @@
         <div class="container">
           <article>
             <div class="section-heading">
-              <h2>Tooltip Editor</h2>
+              <h2>Grass Placement Tool</h2>
               <div class="line-dec"></div>
-              <h3 style="font-size: large;">A UI developer tool for visually designing in-game tooltips.</h3>
+              <h3 style="font-size: large;">A grass placement tool for Unity that assumes a Geometry Shader.</h3>
               <span>
-                Date Started: <time datetime="2020-11-15">November 15, 2020</time>
+                Date Started: <time datetime="2020-10-12">October 12, 2020</time>
                 <br>
-                Date Completed: <time datetime="2020-11-18">November 18, 2020</time>
-                <br>
-                Time to Complete: <time datetime="PT8H30M">8 hours, 30 minutes</time>
+                Date Completed: <time datetime="2020-10-14">October 14, 2021</time>
               </span>
             </div>
-            <div class="left-image-post">
-              <div class="row">
-                <div class="col-md-6">
-                  <figure>
-                    <video class="video" loop muted controls>
-                      <source src="../assets/videos/tooltip.mp4" type="video/mp4">
-                      Sorry, your browser doesn't support embedded videos.
-                    </video>
-                  </figure>
-                </div>
-                <div class="col-md-6">
-                  <div class="white-button" style="text-align:center">
-                    <a href="https://github.com/starfaerie/Tooltip">
-                      Project Github
-                      <i>
-                        <svg focusable="false" data-icon="github" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" width="24px" height="24px">
-                          <path fill="#a43f49" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/>
-                        </svg>
-                      </i>
-                    </a>
-                  </div>
-                  <p>
-                    The tooltips appear whenever the player hovers over an object with a Collider or a UI element on a
-                    Unity Canvas that also contains this component.
-                    This tool came about after meeting with the UI/UX team for a project I was working on for Boise State
-                    University's <a href="https://www.boisestate.edu/cid/" class="inline-link">College of Innovation and Design</a>.
-                    After hearing the team talk about the need to standardize how UI looked and behaved within a virtual
-                    space I decided to take on the task of creating a tooltip system.
-                    After spending a few hours agonizing over trying to create tooltip behavior using Unity’s built in
-                    components I decided to completely scrap using Unity’s built in components and just build my own.
-                    The UI team gave me a list of design options that the tooltip designer would ideally support and you
-                    can see them demonstrated in the live preview here.
-                    <br>
-                    <br>
-                    The designer supports custom fonts and fade in/fade out
-                    animation curves.
-                    I used Unity's <a href="https://docs.unity3d.com/Manual/gui-Basics.html" class="inline-link"><abbr title="Immediate Mode Graphic User Interface">IMGUI</abbr></a> system since it works across all of Unity's rendering pipelines, allowing the tool to be used by as many people as possible.
-                    The core feature of the editor is the real time visual preview shown in the Editor itself that mimics
-                    the in game tooltip popup.
-                    The visual designer also supports a preview of the fade animations.
-                  </p>
-                </div>
-              </div>
+            <div class="white-button" style="text-align:center">
+              <a href="https://github.com/starfaerie/Grass-Tool">
+                Project Github
+                <i>
+                  <svg focusable="false" data-icon="github" role="img" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 496 512" width="24px" height="24px">
+                    <path fill="#a43f49"
+                      d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" />
+                  </svg>
+                </i>
+              </a>
             </div>
+            <figure>
+              <video class="video" loop muted controls>
+                <source src="../assets/videos/grasstool.mp4" type="video/mp4">
+                Sorry, your browser doesn't support embedded videos.
+              </video>
+            </figure>
+            <p>
+              This grass tool allows environmental artists to add grass geometry to a Unity scene by
+              intuitively painting points into a scene achieved using <del>stolen faerie magic</del> GPU geometry shader maths,
+              rather than having to rely on 3D modeling and hand placing each grass mesh into the scene.
+              I've attempted to recreate the method that I assume was used by the devs of Genshin Impact to place grass
+              into the game environment and significantly reduce the production time to create an immersive environment
+              (interactive grass shader features to be added at a later update, the focus of this project was to build the Editor tool).
+            </p>
           </article>
         </div>
       </section>
