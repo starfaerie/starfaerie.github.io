@@ -226,7 +226,7 @@
 
       <section class="section about-me" data-section="about-me">
         <div class="container">
-          <iframe style="margin:auto;display:block;padding:20px;max-width:100%;" width="560" height="315px" src="https://www.youtube-nocookie.com/embed/Z8JCWIJMqPA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe style="margin:auto;display:block;padding-top:20px;max-width:100%;" width="720" height="405" src="https://www.youtube-nocookie.com/embed/Z8JCWIJMqPA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           <!-- Heading -->
           <header class="section-heading">
             <h2>About Me</h2>
@@ -241,7 +241,7 @@
             <div class="row">
               <div class="col-md-6">
                 <div class="left-image">
-                  <a href="#" title="View my Resume" tabindex="-1">
+                  <div>
                     <svg style="margin:auto;display:block;max-height:200px" width="auto" version="1.1" viewBox="0 0 1293 1287.6" xmlns="http://www.w3.org/2000/svg">
                       <g transform="translate(-9.3875 -1.0736)" fill="none" stroke="#a43f49" stroke-width="30">
                        <g stroke-linecap="round" stroke-linejoin="round">
@@ -255,7 +255,7 @@
                        <path d="m1088.9 224.8 156.31 96.595"/>
                       </g>
                     </svg>
-                  </a>
+                  </div>
                 </div>
               </div>
               <div class="col-md-6">
@@ -264,9 +264,6 @@
                   <p>
                     You're in luck! I'm looking for full-time work as a tech artist or VFX artist.
                   </p>
-                  <div class="white-button">
-                    <a href="#">View my Resume</a>
-                  </div>
                 </div>
               </div>
             </div>
@@ -376,23 +373,20 @@
                   <label><input type="radio" data-type="shaders" name="isotope-filter" />
                     <span>shaders</span></label>
                 </div>
-                <div class="white-button">
-                  <label><input type="radio" data-type="other-media" name="isotope-filter" />
-                    <span>other</span></label>
-                </div>
               </form>
               <div class="isotope-box">
+                <!-- Water Shader -->
                 <div class="isotope-item" data-type="shaders">
-                  <figure class="snip-preview" role="button" onclick="location.href='articles/character-creator.html'"
-                  onkeydown="if (event.keyCode === 13 || event.keyCode === 32) {location.href='articles/character-creator.html';}" tabindex=0>
+                  <figure class="snip-preview" role="button" onclick="location.href='articles/water.html'"
+                  onkeydown="if (event.keyCode === 13 || event.keyCode === 32) {location.href='articles/water.html';}" tabindex=0>
                     <img
-                      src="assets/images/character-creator.jpg"
-                      alt="Character Creator"
+                      src="assets/images/water.jpg"
+                      alt="Water System"
                     />
                     <figcaption>
                       <a
-                        href="assets/images/character-creator.jpg"
-                        aria-label="Character Creator" tabindex="-1">
+                        href="articles/water.html"
+                        aria-label="Grass Tool" tabindex="-1">
                         <i>
                           <svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="50%" height="50%">
                             <title>Examine</title>
@@ -400,12 +394,13 @@
                           </svg>
                         </i>
                       </a>
-                      <h3>Character Creator</h3>
-                      <span>Lead a team of 10 for 6 months to develop a Character Creator in Unity.</span>
+                      <h3>Water Systems</h3>
+                      <span>A VR ready procedural water system for Unity's Universal Rendering Pipeline.</span>
                     </figcaption>
                   </figure>
                 </div>
-
+                
+                <!-- Tooltip Editor -->
                 <div class="isotope-item" data-type="editors">
                   <figure class="snip-preview" role="button" onclick="location.href='articles/tooltip.html'"
                   onkeydown="if (event.keyCode === 13 || event.keyCode === 32) {location.href='articles/tooltip.html';}" tabindex=0>
@@ -430,6 +425,7 @@
                   </figure>
                 </div>
 
+                <!-- Grass Tool -->
                 <div class="isotope-item" data-type="editors">
                   <figure class="snip-preview" role="button" onclick="location.href='articles/grass-tool.html'"
                   onkeydown="if (event.keyCode === 13 || event.keyCode === 32) {location.href='articles/grass-tool.html';}" tabindex=0>
@@ -454,17 +450,18 @@
                   </figure>
                 </div>
 
-                <div class="isotope-item" data-type="editors">
-                  <figure class="snip-preview" role="button" onclick="location.href='assets/images/portfolio-04.jpg'"
-                  onkeydown="if (event.keyCode === 13 || event.keyCode === 32) {location.href='assets/images/portfolio-04.jpg';}" tabindex=0>
+                 <!-- Character Creator -->
+                 <div class="isotope-item" data-type="shaders">
+                  <figure class="snip-preview" role="button" onclick="location.href='articles/character-creator.html'"
+                  onkeydown="if (event.keyCode === 13 || event.keyCode === 32) {location.href='articles/character-creator.html';}" tabindex=0>
                     <img
-                      src="assets/images/portfolio-04.jpg"
-                      alt="sq-sample26"
+                      src="assets/images/character-creator.jpg"
+                      alt="Character Creator"
                     />
                     <figcaption>
                       <a
-                        href="assets/images/portfolio-04.jpg"
-                        aria-label="Image Four" tabindex="-1">
+                        href="assets/images/character-creator.jpg"
+                        aria-label="Character Creator" tabindex="-1">
                         <i>
                           <svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="50%" height="50%">
                             <title>Examine</title>
@@ -472,60 +469,13 @@
                           </svg>
                         </i>
                       </a>
-                      <h3>Item Fourth</h3>
-                      <span>Describe this picture here 4</span>
+                      <h3>Character Creator</h3>
+                      <span>Lead a team of 10 for 6 months to develop a Character Creator in Unity.</span>
                     </figcaption>
                   </figure>
                 </div>
 
-                <div class="isotope-item" data-type="shaders">
-                  <figure class="snip-preview" role="button" onclick="location.href='assets/images/portfolio-05.jpg'"
-                  onkeydown="if (event.keyCode === 13 || event.keyCode === 32) {location.href='assets/images/portfolio-05.jpg';}" tabindex=0>
-                    <img
-                      src="assets/images/portfolio-05.jpg"
-                      alt="sq-sample26"
-                    />
-                    <figcaption>
-                      <a
-                        href="assets/images/portfolio-05.jpg"
-                        aria-label="Image Five" tabindex="-1">
-                        <i>
-                          <svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="50%" height="50%">
-                            <title>Examine</title>
-                            <path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"></path>
-                          </svg>
-                        </i>
-                      </a>
-                      <h3>Fifth Awesome</h3>
-                      <span>Describe this picture here 5</span>
-                    </figcaption>
-                  </figure>
-                </div>
-
-                <div class="isotope-item" data-type="other-media">
-                  <figure class="snip-preview" role="button" onclick="location.href='assets/images/portfolio-06.jpg'"
-                  onkeydown="if (event.keyCode === 13 || event.keyCode === 32) {location.href='assets/images/portfolio-06.jpg';}" tabindex=0>
-                    <img
-                      src="assets/images/portfolio-06.jpg"
-                      alt="sq-sample26"
-                    />
-                    <figcaption>
-                      <a
-                        href="assets/images/portfolio-06.jpg"
-                        aria-label="Image Six" tabindex="-1">
-                        <i>
-                          <svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="50%" height="50%">
-                            <title>Examine</title>
-                            <path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"></path>
-                          </svg>
-                        </i>
-                      </a>
-                      <h3>Awesome Sixth</h3>
-                      <span>Describe this picture here 6</span>
-                    </figcaption>
-                  </figure>
-                </div>
-              </div>
+              </div><!-- End of Isotope Box -->
             </div>
           </div>
         </div>

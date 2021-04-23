@@ -182,24 +182,12 @@
             </div>
             <ul id="navlinks">
                 <li>
-                    <a class="sr-only" href="#videos">Skip to main content</a>
-                </li>
-                <li>
-                    <a class="nav-link" style="display: none;" role="button" aria-pressed="false" href="#videos"
-                        onclick="displayNav()">
-                        <div class="LinkButton">Videos</div>
-                    </a>
+                    <a class="sr-only" href="#shaders">Skip to main content</a>
                 </li>
                 <li>
                     <a class="nav-link" style="display: none;" role="button" aria-pressed="false" href="#shaders"
                         onclick="displayNav()">
                         <div class="LinkButton">Shaders</div>
-                    </a>
-                </li>
-                <li>
-                    <a class="nav-link" style="display: none;" role="button" aria-pressed="false" href="#editors"
-                        onclick="displayNav()">
-                        <div class="LinkButton">Unity Editors</div>
                     </a>
                 </li>
             </ul>
@@ -214,41 +202,6 @@
     </div>
 
     <main class="content" id="content">
-        <section id="videos">
-            <div class="main-content">
-                <div class="mainbody">
-                    <!-- Mrs. Pacman -->
-                    <div class="Pacman"></div>
-                    <div class="PacmanBowLeft"></div>
-                    <div class="PacmanBowRight"></div>
-                    <!-- Videos -->
-                    <div class="headertext">
-                        <h3 class="section-header">
-                            Videos
-                        </h3>
-                    </div>
-
-                    <!-- Youtube videos -->
-                    <div class="youtube-container">
-                        <a href="index.html">
-                            <picture>
-                                <source class="responsive-youtube" srcset="Images/Previews/vid1.webp"
-                                    type="image/webp" />
-                                <img class="responsive-youtube" src="Images/Previews/vid1.jpg" alt="Video Title"
-                                    loading="lazy" />
-                            </picture>
-                            <div class="youtube-play-button">
-                                <svg version="1.1" viewBox="0 0 184 129" xmlns="http://www.w3.org/2000/svg" height="90" width="128">
-                                    <path d="m122.41 62.769c-16.936-9.7781-33.872-19.556-50.808-29.334-0.0012 20.71-3.63e-4 41.42-0.0034 62.129 17.937-10.354 35.875-20.708 53.811-31.063-1-0.57739-2-1.1548-3-1.7322z" fill="#fff"/>
-                                    <path class="outer-play" d="m180.1 20.2c-2.1-7.9-8.4-14.2-16.3-16.3-14.3-3.9-71.8-3.9-71.8-3.9s-57.6 0.1-71.9 4c-7.9 2.1-14.2 8.4-16.3 16.3-3.8 14.3-3.8 44.2-3.8 44.2s0 29.9 3.9 44.3c2.1 7.9 8.4 14.2 16.3 16.3 14.3 3.9 71.8 3.9 71.8 3.9s57.5 0 71.8-3.9c7.9-2.1 14.2-8.4 16.3-16.3 3.9-14.3 3.9-44.3 3.9-44.3s0-29.9-3.9-44.3zm-106.5 71.9v-55.2l47.8 27.6z" fill="#282828"/>
-                                </svg>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
         <section id="shaders">
             <div class="mainbody">
                 <!-- Moon -->
@@ -296,55 +249,6 @@
                 </div>
             </div>
         </section>
-
-        <section id="editors">
-            <div class="mainbody">
-                <!-- Pencil -->
-                <div class="Pencil"></div>
-                <!-- Editors -->
-                <div class="headertext">
-                    <h3 class="section-header">
-                        Editors
-                    </h3>
-                </div>
-                <p></p>
-
-                <!-- Article Example -->
-                <div class="card-compact" onclick="location.href='index.html';" tabindex=0
-                    onkeydown="location.href='index.html';" style="cursor: pointer;">
-                    <div class="card-image-box">
-                        <picture>
-                            <source class="card-image-small" srcset="Images/Previews/fire.webp" type="image/webp" />
-                            <img class="card-image-small" src="Images/Previews/fire.png" alt="Fire Shader"
-                                loading="lazy" />
-                        </picture>
-                    </div>
-                    <div class="card-text">
-                        <h2 class="title-no-margin">
-                            <a href="index.html">Fire Shader
-                                Breakdown</a>
-                        </h2>
-                        <p>
-                            A shader which distorts the UVs with noise for sampling a fire texture or shape
-                            generated using ellipse nodes.
-                        </p>
-                        <div class="card-footer">
-                            <div class="card-footer-content">
-                                <div class="tag" style="background-color:#007e8a;">
-                                    <abbr title="Universal Rendering Pipeline">URP</abbr>
-                                </div>
-
-                                <div class="tag" style="background-color:#101010;">
-                                    Shader Graph
-                                </div>
-                                <time datetime="2020-12-01">December 01, 2020</time>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
         <section>
             <div class="mainbody">
                 <footer>
