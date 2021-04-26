@@ -226,10 +226,17 @@
 
       <section class="section about-me" data-section="about-me">
         <div class="container">
-          <iframe style="margin:auto;display:block;padding:20px 0 20px 0;max-width:100%;" width="720" height="405" src="https://www.youtube-nocookie.com/embed/Z8JCWIJMqPA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          <div style="text-align:center;" class="white-button">
-            <a href="https://youtu.be/Z8JCWIJMqPA">View Showreel on Youtube</a>
-          </div>
+          <figure>
+            <video class="video" style="width:100%;" loop controls>
+                <source src="assets/videos/showreal.mp4" type="video/mp4">
+                Sorry, your browser doesn't support embedded videos.
+            </video>
+            <figcaption style="text-align:center;">
+                <i>
+                  My VFX ShowReel.
+                </i>
+            </figcaption>
+          </figure>
           <!-- Heading -->
           <header class="section-heading">
             <h2>About Me</h2>
@@ -244,7 +251,7 @@
             <div class="row">
               <div class="col-md-6">
                 <div class="left-image">
-                  <div>
+                  <a href="#" title="View my Resume" tabindex="-1">
                     <svg style="margin:auto;display:block;max-height:200px" width="auto" version="1.1" viewBox="0 0 1293 1287.6" xmlns="http://www.w3.org/2000/svg">
                       <g transform="translate(-9.3875 -1.0736)" fill="none" stroke="#a43f49" stroke-width="30">
                        <g stroke-linecap="round" stroke-linejoin="round">
@@ -258,7 +265,7 @@
                        <path d="m1088.9 224.8 156.31 96.595"/>
                       </g>
                     </svg>
-                  </div>
+                  </a>
                 </div>
               </div>
               <div class="col-md-6">
@@ -267,6 +274,9 @@
                   <p>
                     You're in luck! I'm looking for full-time work as a tech artist or VFX artist.
                   </p>
+                  <div class="white-button">
+                    <a href="#">View my Resume</a>
+                  </div>
                 </div>
               </div>
             </div>
