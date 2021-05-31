@@ -503,7 +503,7 @@
       window.onload = function () {
         //Video Autoplay when Visible
         function playVisibleVideos() {
-          document.querySelectorAll("video").forEach(video => elementIsVisible(video) ? video.play() : video.pause());
+          // document.querySelectorAll("video").forEach(video => elementIsVisible(video) ? video.play() : video.pause());
           document.querySelectorAll("video").forEach(video => elementIsVisible(video) ?
             video.style.filter = "grayscale(0)" : video.style.filter = "grayscale(0.5) brightness(0.8)");
           document.querySelectorAll("video").forEach(video => elementIsVisible(video) ?
@@ -515,6 +515,7 @@
             rect.top <= (window.innerHeight || document.documentElement.clientHeight) &&
             rect.left <= (window.innerWidth || document.documentElement.clientWidth));
         }
+        /*
         let playVisibleVideosTimeout;
         window.addEventListener("scroll", () => {
           clearTimeout(playVisibleVideosTimeout);
@@ -522,6 +523,7 @@
         });
         window.addEventListener("resize", playVisibleVideos);
         window.addEventListener("DOMContentLoaded", playVisibleVideos);
+        */
 
         // Menu Open+Close
         var toggle = document.getElementById("menu-toggle");
