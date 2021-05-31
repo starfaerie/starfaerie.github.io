@@ -1,3 +1,11 @@
+/*
+--red-salsa: #ff2949ff;
+--sea-green-crayola: #47eec9ff;
+--rich-black-fogra-29: #15202bff;
+--dim-gray: #666666ff;
+--gainsboro: #ddddddff;
+*/
+
 @media screen {
     html {
         scroll-behavior:smooth;
