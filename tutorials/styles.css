@@ -43,16 +43,19 @@ abbr {
     border-bottom: none !important;
     cursor: inherit !important;
     text-decoration: none !important;
-    color:#52d2d6;
+    color:#40bdd3;
 }
 
 .tag abbr {
     color:#fff;
 }
 
-a:link {
-    color:#de99ff;
+a {
+    color:#affdcd;
     text-decoration:none;
+}
+a:hover {
+    color:#40bdd3;
 }
 
 .center-footer {
@@ -96,7 +99,7 @@ a:link {
     width:100%;
     height:200px;
     background-size:cover;
-    background-image:linear-gradient(180deg,#ff9999 0,#affdcd 100%);
+    background-image:linear-gradient(180deg,#40bdd3 0,#affdcd 100%);
 }
 
 .header-img {
@@ -237,8 +240,8 @@ a:link {
     text-align:center;
     font-weight:700;
     line-height:0.5;
-    background:#FFD2A8;
-    background-image:linear-gradient(180deg,#FFD2A8 0,#7AD89B 100%);
+    background:#40bdd3;
+    background-image:linear-gradient(180deg,#40bdd3 0,#7AD89B 100%);
     position: relative;
 }
 
@@ -315,7 +318,7 @@ a:link {
     z-index:99;
     border:none;
     outline:0;
-    background-color:#ff9999;
+    background-color:#40bdd3;
     text-shadow:1px 1px #000;
     color:#fff;
     cursor:pointer;
@@ -327,7 +330,7 @@ a:link {
 #myBtn:hover {
     background-color: #affdcd;
     color:#000;
-    border:2px solid#ff9999;
+    border:2px solid#40bdd3;
 }
 
 .sr-only {
@@ -624,7 +627,7 @@ img {
 }
 
 .card-compact:hover > .card-text > h2 > a {
-    color: #52d2d6;
+    color: #40bdd3;
 }
 
 .card-text {
