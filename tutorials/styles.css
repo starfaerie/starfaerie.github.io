@@ -94,6 +94,10 @@ a:hover {
     overflow:hidden;
 }
 
+h1.center {
+    text-align:center;
+}
+
 .header {
     position: relative;
     width:100%;
