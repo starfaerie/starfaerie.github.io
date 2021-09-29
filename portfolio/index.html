@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+    <meta name="description" content="Astrid is a Technical Artist, Unity Editor Aficionado, and Shader Math Enthusiast." />
+    <meta name="author" content="Astrid Wilde" />
+    <link rel="canonical" href="https://astridwilde.com/portfolio/" />
+
+    <title>Astrid Wilde's Portfolio Website</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="../vendor/bootstrap/css/bootstrap.min.css" />
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="../assets/fonts/Lato.css" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/webkit-scrollbars.css" />
+
+    <!-- Facebook Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://astridwilde.com/portfolio">
+    <meta property="og:title" content="Astrid Wilde">
+    <meta property="og:image" content="https://astridwilde.com/assets/images/tutorial_FB.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1200"> <!-- Recommended width:1200 -->
+    <meta property="og:image:height" content="630"> <!-- Recommended height:630 -->
+    <meta property="og:image:alt" content="Website logo showing a computer ready to play a video.">
+    <meta property="og:description" content="Technical Artist, Unity Editor Aficionado, Shader Math Enthusiast."> <!-- Fewer than 200 characters -->
+    <meta property="og:site_name" content="Astrid Wilde">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Twitter Card (defaults to Open Graph values) -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@astridwilde1">
+    <meta name="twitter:creator" content="@astridwilde1">
+
+    <!-- Rich Results for Google: https://search.google.com/test/rich-results -->
+    <!-- Article Rich Text: https://developers.google.com/search/docs/data-types/article -->
+    <!-- Supported Types: https://support.google.com/webmasters/answer/7445569#zippy=%2Csupported-types -->
+    <!-- Google Search Console: https://search.google.com/u/1/search-console?resource_id=sc-domain:astridwilde.com -->
+    <script type="application/ld+json">
+      {
+        "@context":"http://schema.org",
+        "@graph":[
+          {
+            "@type":"Person",
+            "name":"Astrid Wilde",
+            "alternateName": "Star Faerie",
+            "nationality": "United States",
+            "birthDate": "1993",
+            "url":"https://astridwilde.com/portfolio/",
+            "mainEntityOfPage": {
+              "@type": "WebPage",
+              "@id": "https://astridwilde.com/portfolio"
+            },
+            "sameAs":[
+              "https://twitter.com/astridwilde1",
+              "https://www.linkedin.com/in/astridwilde",
+              "https://www.artstation.com/starfaerie",
+              "https://www.youtube.com/channel/UCcZ15XKn1PHcxApyiKFqlqQ",
+              "https://github.com/starfaerie",
+              "https://www.twitch.tv/astridwilde",
+              "https://www.instagram.com/astridwilde"
+            ],
+            "image":"https://astridwilde.com/assets/images/author-image_340.jpg",
+            "description": "Technical Artist, Unity Editor Aficionado, Shader Math Enthusiast.",
+            "jobTitle": "Technical Artist",
+            "brand": "Astrid Wilde Tutorials",
+            "email": "astrid@astridwilde.com",
+            "alumniOf": {
+              "@type": "EducationalOrganization",
+              "name": "Boise State University",
+              "url": "https://www.boisestate.edu/",
+              "location": {
+                "@type": "Place",
+                "name": "Boise State University",
+                "address": {
+                  "@type": "PostalAddress",
+                  "addressLocality": "Boise", 
+                  "postalCode": "83725",
+                  "streetAddress": "1910 West University Drive"
+                }
+              }
+            },
+            "knowsLanguage": ["de-DE","en-US"]
+          }
+        ]
+      }
+    </script>
+
+    <!-- Example Article Rich Text -->
+    <!--
+    <script type="application/ld+json">
+      {
+        "@context":"https://schema.org",
+        "@graph":[
+          {
+            "@type":"NewsArticle",
+            "author":{
+              "@type":["Person"],
+              "@id":"https://www.dexerto.com/#/schema/person/a791ce9debe406aa5aac3848a390a918",
+              "name":"Bill Cooney",
+              "image":{
+                "@type":"ImageObject",
+                "@id":"https://www.dexerto.com/#personlogo",
+                "inLanguage":"en-US",
+                "url":"https://secure.gravatar.com/avatar/3efa12a220152fd9a4d66159b004b340?s=96&d=mm&r=g",
+                "caption":"Bill Cooney"
+              }
+            },
+            "headline":"CodeMiko responds to criticism for inviting Alinity on her Twitch stream",
+            "datePublished":"2021-03-07T21:03:07+00:00",
+            "dateModified":"2021-03-07T21:03:07+00:00",
+            "mainEntityOfPage":{
+              "@type":"WebPage",
+              "@id":"https://www.dexerto.com/entertainment/codemiko-responds-to-criticism-for-inviting-alinity-on-her-twitch-stream-1528753/"
+            },
+            "publisher":{
+              "@type":"Organization",
+              "@id":"https://www.dexerto.com/#organization",
+              "name":"Dexerto",
+              "url":"https://www.dexerto.com/",
+              "sameAs":[
+                "https://en-gb.facebook.com/Dexerto/",
+                "https://www.instagram.com/dexerto/?hl=en",
+                "https://www.linkedin.com/company/dexerto-ltd",
+                "https://www.youtube.com/channel/UCU9Ra54_MiPLVlhY01pPkag",
+                "https://twitter.com/Dexerto"
+              ],
+              "logo":{
+                "@type":"ImageObject",
+                "@id":"https://www.dexerto.com/#logo",
+                "inLanguage":"en-US",
+                "url":"https://s3.amazonaws.com/dexerto-assets-production-cbbdf288/uploads/2020/10/15124734/dexerto-logo-1.png",
+                "width":151,
+                "height":47,
+                "caption":"Dexerto"
+              },
+              "image":{
+                "@id":"https://www.dexerto.com/#logo"
+              }
+            },
+            "articleSection":"Entertainment",
+            "dateline":"Sunday, March 7th, 2021",
+            "articleBody":"Popular virtual Twitch streamer CodeMiko is facing some criticism from fans after announcing that fellow streamer Natalia \u2018Alinity\u2019 Mogollon had been invited as a guest on her stream.\n\n\t\t\n\t\t\t\n\t\t\n\t\nIf you haven\u2019t heard of CodeMiko, she\u2019s the hottest new VTuber to go viral on Twitch. The character, created in Unreal Engine, has her own colorful personality and appearance, but there is a real person pulling the levers behind the curtain, known simply as \u201cThe Technician.\u201d\nWhen we said she\u2019s gone viral in 2021, we meant it. Soon after she debuted she had racked up over 200,000 followers, and that number shows no sign of slowing down anytime soon either.\nBut as the number of fans increases, so does the number of people who might disagree with CodeMiko\u2019s content choices. On Sunday, March 7 it was announced that fellow streamer Alinity would be joining her for a broadcast, and some fans didn\u2019t seem too thrilled.\n\nHey guys! we also have the lovely Alinity today @AlinityTwitch pic.twitter.com/ql9BlVhNWV\n&mdash; Miko (@thecodemiko) March 7, 2021\n\nAlinity has been a divisive topic on Twitch since that infamous clip of her &#8220;tossing&#8221; her cat over her shoulder in 2019 went viral. She definitely appears to have tried to put the whole incident behind her but is still getting hate almost two years later.\n\nRead More:\u00a0CodeMiko reveals she has nightmares about her Twitch bans: &#8220;I have PTSD from it&#8221;\n\n&#8220;&#8216;Lovely&#8217; is an odd choice of words,&#8221; one Twitter user replied to Miko&#8217;s announcement. &#8220;F. Nope. Not lovely,&#8221; another added, and there were plenty of sad cat pictures in the replies as well.\n\n&#8220;lovely&#8221; is an odd choice of words\n\u2014 Toreole (@ToreoleM) March 7, 2021\n\n\nCats around the world. pic.twitter.com/dIs4zCejgb\n\u2014 IDNA (@idnotapplicable) March 7, 2021\n\nMiko didn&#8217;t just let the haters pile on unopposed though, replying to the main tweet and most of the replies with a link to Alinity&#8217;s interview with Dr. K, where she talked extensively about the incident and the backlash that followed.\n\nPeople commenting about the cat situation are real comedians huh\n\u2014 Alejandro Salas (@salaslml) March 7, 2021\n\nSurprisingly, a lot of the tweets blasting Alinity that Miko responded to actually got deleted after she replied, and when other fans argued it was time to leave the whole incident in the past.\n\nRead more:\u00a0CodeMiko doesn\u2019t understand why VTuber fans are so \u201cprotective\u201d amid PewDiePie backlash\n\nDespite the haters, CodeMiko&#8217;s Alinity guest stream went right on ahead, and you can catch it live or watch a VOD if you missed it on the VTuber&#8217;s Twitch channel.",
+            "image":{
+              "@type":"ImageObject",
+              "@id":"https://www.dexerto.com/entertainment/codemiko-responds-to-criticism-for-inviting-alinity-on-her-twitch-stream-1528753/#primaryimage",
+              "inLanguage":"en-US",
+              "url":"https://s3.us-east-1.amazonaws.com/dexerto-assets-production-cbbdf288/uploads/2021/03/07203739/Alinity-Code-Miko-FINAL.jpg",
+              "width":1600,
+              "height":900,
+              "caption":"CodeMiko and Alinity"
+            },
+          }
+        ]
+      }
+    </script>
+    -->
+  </head>
+
+  <body>
+    <div id="page-wraper">
+      <!-- Sidebar Menu -->
+      <aside class="responsive-nav">
+        <!-- Menu Toggle Button -->
+        <i id="menu-toggle" role="button" aria-label="Menu Button">
+          <svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="80%" height="80%">
+            <path fill="#a43f49" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"></path>
+          </svg>
+        </i>
+        <nav id="menu" class="menu">
+          <!-- Close Menu Button -->
+          <i id="menu-close" tabindex="0" role="button" aria-pressed="false" aria-label="Close Menu Button">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512" width="50%" height="50%">
+              <path fill="#a43f49" d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"></path>
+            </svg>
+          </i>
+          <div class="container">
+            <div class="image">
+              <a href="https://astridwilde.com/portfolio/" tabindex="-1">
+                <picture>
+                  <source type="image/webp"
+                      srcset="../assets/images/author-image_170.webp, ../assets/images/author-image_255.webp 1.5x, ../assets/images/author-image_340.webp 2x" />
+                  <img srcset="../assets/images/author-image_170.jpg, ../assets/images/author-image_255.jpg 1.5x, ../assets/images/author-image_340 2x"
+                      src="../assets/images/author-image_340.jpg" alt="Astrid Wilde" height="220"
+                      width="220" loading="lazy" />
+                </picture>
+              </a>
+            </div>
+            <div class="author-content">
+              <h4>Astrid Wilde</h4>
+              <span><abbr title="Technical Artist" class="white">Tech Artist</abbr></span>
+            </div>
+            <nav class="main-nav">
+              <ul class="main-menu">
+                <li><a class="scroll" href="#about-me" tabindex="-1">About Me</a></li>
+                <li><a class="scroll" href="#skills" tabindex="-1">My Tools</a></li>
+                <li><a class="scroll" href="#portfolio" tabindex="-1">My Portfolio</a></li>
+                <li><a href="../tutorials/" tabindex="-1" title="View my Tutorials">My Tutorials</a></li>
+                <li class="last-menu-item"><a href="../donate/" tabindex="-1" title="Support My OpenSource Projects with Crypto">Donate Crypto</a></li>
+              </ul>
+            </nav>
+            <div class="social-network">
+              <ul class="social-icons">
+                <li>
+                  <a href="https://twitter.com/astridwilde1" aria-label="Twitter"><i><svg focusable="false" data-icon="twitter" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="70%" height="70%"><title>Twitter</title><path fill="#fff" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg></i></a>
+                </li>
+                <li>
+                  <a href="https://astridwilde.substack.com/" aria-label="Substack"><i><svg data-icon="substack" focusable="false" role="img" version="1.1" viewBox="0 0 21.08 24" xmlns="http://www.w3.org/2000/svg" width="70%" height="70%"><title>Substack</title><path fill="#fff" d="m21.079 8.242h-21.079v-2.836h21.08v2.836zm-21.079 2.57v13.188l10.54-5.89 10.54 5.89v-13.188zm21.08-10.812h-21.08v2.836h21.08z"/></svg></i></a>
+                </li>
+                <li>
+                  <a href="https://www.artstation.com/starfaerie" aria-label="Artstation"><i><svg focusable="false" data-icon="artstation" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="70%" height="70%"><title>Artstation</title><path fill="#fff" d="M2 377.4l43 74.3A51.35 51.35 0 0 0 90.9 480h285.4l-59.2-102.6zM501.8 350L335.6 59.3A51.38 51.38 0 0 0 290.2 32h-88.4l257.3 447.6 40.7-70.5c1.9-3.2 21-29.7 2-59.1zM275 304.5l-115.5-200L44 304.5z"></path></svg></i></a>
+                </li>
+                <li>
+                  <a href="https://www.linkedin.com/in/astridwilde" aria-label="LinkedIn"><i><svg focusable="false" data-icon="linkedin-in" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="70%" height="70%"><title>LinkedIn</title><path fill="#fff" d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"></path></svg></i></a>
+                </li>
+                <li>
+                  <a href="https://www.youtube.com/channel/UCcZ15XKn1PHcxApyiKFqlqQ" aria-label="YouTube"><i><svg focusable="false" data-icon="youtube" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="70%" height="70%"><title>YouTube</title><path fill="#fff" d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"></path></svg></i></a>
+                </li>
+                <li>
+                  <a href="https://github.com/starfaerie/" aria-label="Github"><i><svg focusable="false" data-icon="github" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" width="70%" height="70%"><title>Github</title><path fill="#fff" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path></svg></i></a>
+                </li>
+                <li>
+                  <a href="mailto:astrid@astridwilde.com" aria-label="E-mail"><i><svg focusable="false" data-icon="email" role="img" version="1.1" viewBox="0 0 398.96 253.12" width="70%" height="70%" xmlns="http://www.w3.org/2000/svg"><title>E-mail</title><g transform="translate(-105.37 -621.99)"><g transform="matrix(6.6667 0 0 6.6667 -5.6668 -5957.7)"><path fill="#fff" transform="translate(0 450.36)" d="m20.719 536.59c-0.4742 0-0.92094 0.0818-1.3438 0.25l8.4688 8.7188 8.5625 8.875 0.15625 0.1875 0.25 0.25 0.25 0.25 0.5 0.53125 7.3438 7.5312c0.12227 0.076 0.4766 0.4042 0.75343 0.54258 0.35658 0.17824 0.74309 0.34255 1.1415 0.3568 0.42992 0.0154 0.86933-0.10782 1.2562-0.29601 0.28973-0.14096 0.41857-0.34294 0.75515-0.60337l8.5-8.7812 8.5938-8.8438 8.2812-8.5312c-0.53164-0.28806-1.1205-0.4375-1.75-0.4375zm-2.5938 1.0625c-0.90312 0.85572-1.4688 2.1422-1.4688 3.5938v28.625c0 1.1754 0.3775 2.2431 1 3.0625l1.1875-1.125 8.8438-8.5938 7.8438-7.5938-0.15625-0.1875-8.5938-8.8438-8.5938-8.875zm57.188 0.28125-8.375 8.6562-8.5625 8.8438-0.15625 0.15625 8.1562 7.9062 8.8438 8.5938 0.53125 0.5c0.47616-0.76402 0.75-1.7052 0.75-2.7188v-28.625c0-1.2943-0.44852-2.468-1.1875-3.3125zm-38.781 18.719-7.8125 7.5938-8.875 8.5938-1.125 1.0938c0.5931 0.38196 1.268 0.625 2 0.625h51.719c0.87996 0 1.6781-0.33853 2.3438-0.875l-0.5625-0.5625-8.875-8.5938-8.1562-7.875-7.3438 7.5625c-0.39746 0.2635-0.66306 0.55576-1.0512 0.73523-0.62462 0.28885-1.3092 0.53321-1.9973 0.52267-0.68992-0.0106-1.3664-0.28061-1.9856-0.58517-0.31079-0.15288-0.47644-0.30481-0.841-0.61023z" color="#000000" fill="#fff"/></g></g></svg></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </aside>
+
+      <section class="section about-me" data-section="about-me">
+        <div class="container">
+          <h1 class="center">Astrid Wilde's Portfolio</h1>
+          <figure>
+            <video class="video" style="width:100%;" controls poster="../assets/images/water-small.jpg">
+                <source src="../assets/videos/showreal.mp4" type="video/mp4">
+                Sorry, your browser doesn't support embedded videos.
+            </video>
+            <figcaption style="text-align:center;">
+                <i>
+                  My VFX ShowReel.
+                </i>
+            </figcaption>
+          </figure>
+          <!-- Heading -->
+          <header class="section-heading">
+            <h2>About Me</h2>
+            <div class="line-dec"></div>
+            <span>        
+              ✨ I use <del>stolen faerie magic</del> shader maths for VFX
+              <br>
+              📚 Ask me about Unity Editor extensions
+            </span>
+          </header>
+          <div class="left-image-post">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="left-image">
+                  <a href="mailto:astrid@astridwilde.com" title="E-mail me!" tabindex="-1">
+                    <svg style="margin:auto;display:block;max-height:200px" version="1.1" viewBox="0 0 1293 1287.6" xmlns="http://www.w3.org/2000/svg">
+                      <g transform="translate(-9.3875 -1.0736)" fill="none" stroke="#a43f49" stroke-width="30">
+                       <g stroke-linecap="round" stroke-linejoin="round">
+                        <path d="m25.57 105.15-0.98178 844.99m965.18-844.99c1.7563-86.057 3.5125-86.898-481.22-88.654-484.73-1.7562-484.73-0.91571-482.97 88.654m963.21 844.99c0 353.01 3.5125 321.4-481.22 323.15-484.73 1.7562-484.73 0-482.97-323.15"/>
+                        <path d="m147.53 312.62h632.26"/>
+                        <path d="m145.77 579.57h460.14"/>
+                        <path d="m147.53 848.28h277.49"/>
+                       </g>
+                       <path fill="#fff" d="m732.38 980 8.7814-173.87 396.92-651.58 149.28 96.595-396.92 642.8z" stroke-linejoin="round"/>
+                       <path d="m741.16 806.12 149.28 87.814"/>
+                       <path d="m1088.9 224.8 156.31 96.595"/>
+                      </g>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="right-text">
+                  <h3>Hiring a VFX artist?</h3>
+                  <p>
+                    You're in luck! I'm looking for full-time work as a tech artist or VFX artist.
+                    <a class="inline-link" href="mailto:astrid@astridwilde.com">E-mail me!</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="right-image-post">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="left-text">
+                  <h3>Looking for my tutorials?</h3>
+                  <p>
+                    If you're trying to find my vfx, shaders, or editor tutorials I bring you good news of great joy, you're only a click away.
+                  </p>
+                  <div class="white-button">
+                    <a href="../tutorials/">View my Tutorials</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="right-image">
+                  <a onmouseover="grow.setAttribute('r','13%');shift.setAttribute('cx','70%');"
+                  onmouseout="grow.setAttribute('r','22');shift.setAttribute('cx','4.5016');"
+                  id="tutorial-img" href="../tutorials/" title="View my Tutorials" tabindex="-1">
+                    <svg style="margin:auto;display:block;max-width:462px" version="1.1" viewBox="0 0 262.77 149.31" xmlns="http://www.w3.org/2000/svg">
+                      <g transform="translate(33.073 -54.94)">
+                          <path d="m-29.073 58.948v141.31h254.77l-0.55325-140.73z" fill="#a43f49"/>
+                          <path d="m-29.073 200.25v-141.31l254.22 0.57093 0.55326 140.73z" fill="none" stroke="#202020" stroke-linejoin="round" stroke-width="8"/>
+                          <path d="m5.5268 161.19 187.95-0.26661" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="3.9956"/>
+                          <path id="line" d="m5.5268 161.19 173.95-0.26661" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="3.9956"/>
+                          <circle id="shift" cx="4.5016" cy="160.92" r="4.25" fill="#202020"/>
+                          <circle id="grow" cx="98.132" cy="122.11" r="22" fill="#202020"/>
+                          <path d="m88.976 109.08v25.391l23.787-12.294z" fill="#fff"/>
+                      </g>
+                  </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section my-services" data-section="skills">
+        <div class="container">
+          <div class="section-heading">
+            <h2>My Tools</h2>
+            <div class="line-dec"></div>
+            <span>These are the tools I've used to finish projects and deliver products.</span>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="service-item">
+                <div class="service-icon"></div>
+                <div class="Pacman draw"></div>
+                <div class="PacmanBowLeft draw"></div>
+                <div class="PacmanBowRight draw"></div>
+                <div class="PacmanEye draw"></div>
+                <div class="PacmanFood draw"></div>
+                <h3>Game Dev and VFX</h3>
+                <p>
+                  Unity, Unreal Engine 4,
+                  <a class="inline-link" href="https://www.autodesk.com/products/maya/overview">Maya</a>,
+                  <a class="inline-link" href="https://www.blender.org/">Blender</a>,
+                  <a class="inline-link" href="https://www.sidefx.com/products/houdini/">Houdini</a>,
+                  Photoshop CC, Illustrator CC, Premiere Pro,
+                  <a class="inline-link" href="https://www.blackmagicdesign.com/products/davinciresolve/">DaVinci Resolve</a>,
+                  <a class="inline-link" href="https://amplify.pt/unity/amplify-shader-editor/">Amplify Shader Editor</a>,
+                  <a class="inline-link" href="https://unity.com/shader-graph">ShaderGraph</a>
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="service-item">
+                <div class="service-icon">
+                  <svg aria-hidden="true" focusable="false" data-icon="code" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path fill="#fff" d="M278.9 511.5l-61-17.7c-6.4-1.8-10-8.5-8.2-14.9L346.2 8.7c1.8-6.4 8.5-10 14.9-8.2l61 17.7c6.4 1.8 10 8.5 8.2 14.9L293.8 503.3c-1.9 6.4-8.5 10.1-14.9 8.2zm-114-112.2l43.5-46.4c4.6-4.9 4.3-12.7-.8-17.2L117 256l90.6-79.7c5.1-4.5 5.5-12.3.8-17.2l-43.5-46.4c-4.5-4.8-12.1-5.1-17-.5L3.8 247.2c-5.1 4.7-5.1 12.8 0 17.5l144.1 135.1c4.9 4.6 12.5 4.4 17-.5zm327.2.6l144.1-135.1c5.1-4.7 5.1-12.8 0-17.5L492.1 112.1c-4.8-4.5-12.4-4.3-17 .5L431.6 159c-4.6 4.9-4.3 12.7.8 17.2L523 256l-90.6 79.7c-5.1 4.5-5.5 12.3-.8 17.2l43.5 46.4c4.5 4.9 12.1 5.1 17 .6z"></path></svg>
+                </div>
+                <h3>Languges &amp; Extensions</h3>
+                <p>
+                  C#, C++, HLSL, JavaScript, HTML5, CSS3, Python, ActionScript,
+                  <a class="inline-link" href="https://chuck.cs.princeton.edu/">ChucK</a>,
+                  <a class="inline-link" href="https://getbootstrap.com/">Bootstrap</a>,
+                  <a class="inline-link" href="https://greensock.com/">Greensock</a>, Node.js
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section my-work" data-section="portfolio">
+        <div class="container">
+          <div class="section-heading">
+            <h2>My Work</h2>
+            <div class="line-dec"></div>
+            <span>These are projects I've worked on recently. Click on each project for a more detailed explanation</span>
+          </div>
+          <div class="row">
+            <div class="isotope-wrapper">
+              <form class="isotope-toolbar">
+                <div class="white-button">
+                  <label><input type="radio" data-type="*" checked="" name="isotope-filter" /><span>all</span></label>
+                </div>
+                <div class="white-button">
+                  <label><input type="radio" data-type="editors" name="isotope-filter" />
+                    <span>editors</span></label>
+                </div>
+                <div class="white-button">
+                  <label><input type="radio" data-type="shaders" name="isotope-filter" />
+                    <span>shaders</span></label>
+                </div>
+              </form>
+              <div class="isotope-box">
+                <!-- Water Shader -->
+                <div class="isotope-item" data-type="shaders">
+                  <figure class="snip-preview" role="button" onclick="location.href='../articles/water.html'"
+                  onkeydown="if (event.keyCode === 13 || event.keyCode === 32) {location.href='../articles/water.html';}" tabindex=0>
+                    <img
+                      src="../assets/images/water-small.jpg"
+                      alt="Water System"
+                    />
+                    <figcaption>
+                      <a
+                        href="../articles/water.html"
+                        aria-label="Grass Tool" tabindex="-1">
+                        <i>
+                          <svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="50%" height="50%">
+                            <title>Examine</title>
+                            <path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"></path>
+                          </svg>
+                        </i>
+                      </a>
+                      <h3>Water Systems</h3>
+                      <span>A VR ready procedural water system for Unity's Universal Rendering Pipeline.</span>
+                    </figcaption>
+                  </figure>
+                </div>
+                
+                <!-- Tooltip Editor -->
+                <div class="isotope-item" data-type="editors">
+                  <figure class="snip-preview" role="button" onclick="location.href='../articles/tooltip.html'"
+                  onkeydown="if (event.keyCode === 13 || event.keyCode === 32) {location.href='../articles/tooltip.html';}" tabindex=0>
+                    <img
+                      src="../assets/images/tooltip.jpg"
+                      alt="Tooltip Editor"
+                    />
+                    <figcaption>
+                      <a
+                        href="../articles/tooltip.html"
+                        aria-label="Tooltip Editor" tabindex="-1">
+                        <i>
+                          <svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="50%" height="50%">
+                            <title>Project Details</title>
+                            <path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"></path>
+                          </svg>
+                        </i>
+                      </a>
+                      <h3>Tooltip Editor</h3>
+                      <span>An IMGUI based editor tool for Unity. This tool allows UI/UX artists to create in game tooltips in a minimalist style, allowing UI artists to see visual reflections of the changes they make in real time. The visual designer also supports a preview of the fade in/fade out animations.</span>
+                    </figcaption>
+                  </figure>
+                </div>
+
+                <!-- Grass Tool -->
+                <div class="isotope-item" data-type="editors">
+                  <figure class="snip-preview" role="button" onclick="location.href='../articles/grass-tool.html'"
+                  onkeydown="if (event.keyCode === 13 || event.keyCode === 32) {location.href='../articles/grass-tool.html';}" tabindex=0>
+                    <img
+                      src="../assets/images/grasstool.png"
+                      alt="Grass Tool"
+                    />
+                    <figcaption>
+                      <a
+                        href="../articles/grass-tool.html"
+                        aria-label="Grass Tool" tabindex="-1">
+                        <i>
+                          <svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="50%" height="50%">
+                            <title>Examine</title>
+                            <path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"></path>
+                          </svg>
+                        </i>
+                      </a>
+                      <h3>Grass Tool</h3>
+                      <span>A grass placement tool for Unity that assumes a Geometry Shader.</span>
+                    </figcaption>
+                  </figure>
+                </div>
+
+                 <!-- Character Creator -->
+                 <div class="isotope-item" data-type="shaders">
+                  <figure class="snip-preview" role="button" onclick="location.href='../articles/character-creator.html'"
+                  onkeydown="if (event.keyCode === 13 || event.keyCode === 32) {location.href='../articles/character-creator.html';}" tabindex=0>
+                    <img
+                      src="../assets/images/character-creator.jpg"
+                      alt="Character Creator"
+                    />
+                    <figcaption>
+                      <a
+                        href="../assets/images/character-creator.jpg"
+                        aria-label="Character Creator" tabindex="-1">
+                        <i>
+                          <svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="50%" height="50%">
+                            <title>Examine</title>
+                            <path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"></path>
+                          </svg>
+                        </i>
+                      </a>
+                      <h3>Character Creator</h3>
+                      <span>Lead a team of 10 for 6 months to develop a Character Creator in Unity.</span>
+                    </figcaption>
+                  </figure>
+                </div>
+
+              </div><!-- End of Isotope Box -->
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="../vendor/jquery-3.5.1.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!--Isotope core JavaScript -->
+    <script src="../assets/js/isotope.pkgd.min.js"></script>
+
+    <script>
+      window.onload = function () {
+        //Video Autoplay when Visible
+        function playVisibleVideos() {
+          // document.querySelectorAll("video").forEach(video => elementIsVisible(video) ? video.play() : video.pause());
+          document.querySelectorAll("video").forEach(video => elementIsVisible(video) ?
+            video.style.filter = "grayscale(0)" : video.style.filter = "grayscale(0.5) brightness(0.8)");
+          document.querySelectorAll("video").forEach(video => elementIsVisible(video) ?
+            video.style.webkitFilter = "grayscale(0)" : video.style.webkitFilter = "grayscale(0.5) brightness(0.8)");
+        }
+        function elementIsVisible(el) {
+          let rect = el.getBoundingClientRect();
+          return (rect.bottom >= 0 && rect.right >= 0 &&
+            rect.top <= (window.innerHeight || document.documentElement.clientHeight) &&
+            rect.left <= (window.innerWidth || document.documentElement.clientWidth));
+        }
+        /*
+        let playVisibleVideosTimeout;
+        window.addEventListener("scroll", () => {
+          clearTimeout(playVisibleVideosTimeout);
+          playVisibleVideosTimeout = setTimeout(playVisibleVideos, 100); //only updates every 100ms to prevent lag
+        });
+        window.addEventListener("resize", playVisibleVideos);
+        window.addEventListener("DOMContentLoaded", playVisibleVideos);
+        */
+
+        // Menu Open+Close
+        var toggle = document.getElementById("menu-toggle");
+        var menu = document.getElementById("menu");
+        var close = document.getElementById("menu-close");
+        toggle.addEventListener("click", function (e) {
+          if (menu.classList.contains("open")) {
+            menu.classList.remove("open");
+          } else {
+            menu.classList.add("open");
+          }
+        });
+        close.addEventListener("click", function (e) {
+          menu.classList.remove("open");
+        });
+
+        // Isotope behaviors
+        (function ($) {
+          // Close menu after click on smaller screens
+          $(window).on("resize", function () {
+            if ($(window).width() < 846) {
+              $(".main-menu a").on("click", function () {
+                menu.classList.remove("open");
+              });
+            }
+          });
+          $(".hover").mouseleave(function () {
+            $(this).removeClass("hover");
+          });
+          $(".isotope-wrapper").each(function () {
+            var $isotope = $(".isotope-box", this);
+            var $filterCheckboxes = $('input[type="radio"]', this);
+            var filter = function () {
+              var type = $filterCheckboxes.filter(":checked").data("type") || "*";
+              if (type !== "*") {
+                type = '[data-type="' + type + '"]';
+              }
+              $isotope.isotope({ filter: type });
+            };
+            $isotope.isotope({
+              itemSelector: ".isotope-item",
+              layoutMode: "masonry"
+            });
+            $(this).on("change", filter);
+            filter();
+          });
+        })(jQuery);
+      }
+    </script>
+
+    <!-- Navigation Animation and Autoscrolling -->
+    <script>
+      $(".main-menu li:first").addClass("active");
+
+      var showSection = function showSection(section, isAnimate) {
+        var direction = section.replace(/#/, ""),
+          reqSection = $(".section").filter(
+            '[data-section="' + direction + '"]'
+          ),
+          reqSectionPos = reqSection.offset().top - 0;
+
+        if (isAnimate) {
+          $("body, html").animate(
+            {
+              scrollTop: reqSectionPos
+            },
+            300
+          );
+        } else {
+          $("body, html").scrollTop(reqSectionPos);
+        }
+      };
+
+      var checkSection = function checkSection() {
+        $(".section").each(function() {
+          var $this = $(this),
+            topEdge = $this.offset().top - 80,
+            bottomEdge = topEdge + $this.height(),
+            wScroll = $(window).scrollTop();
+          if (topEdge < wScroll && bottomEdge > wScroll) {
+            var currentId = $this.data("section"),
+              reqLink = $("a").filter("[href*=\\#" + currentId + "]");
+            reqLink
+              .closest("li")
+              .addClass("active")
+              .siblings()
+              .removeClass("active");
+          }
+        });
+      };
+
+      $(".main-menu").on("click", "a.scroll", function(e) {
+        e.preventDefault();
+        showSection($(this).attr("href"), true);
+        var menu = document.getElementById("menu");
+        if (menu.classList.contains("open")) {
+            menu.classList.remove("open");
+        }
+      });
+
+      $(window).scroll(function() {
+        checkSection();
+      });
+    </script>
+  </body>
+</html>
