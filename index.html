@@ -153,6 +153,11 @@
         #portfolio {
             max-height:112px;
         }
+        #tutorials picture {
+            position:absolute;
+            left:-60%;
+            top:-10%;
+        }
         .particles {
             position:fixed;
             display:block;
@@ -201,12 +206,12 @@
                 </a>
                 <div class="vertical-grid">
                     <a id="tutorials" class="imgbutton" href="https://astridwilde.com/tutorials/">
-                        <picture style="position:absolute;top:-300px;left:-300px">
+                        <picture>
                             <source type="image/webp"
-                            srcset="assets/images/grass_1600.webp" />
+                            srcset="assets/images/grass_preview.webp" />
                         <img
-                            srcset="assets/images/grass_1600.jpg"
-                            src="assets/images/grass_1600.jpg" alt="tutorials"
+                            srcset="assets/images/grass_preview.jpg"
+                            src="assets/images/grass_preview.jpg" alt="tutorials" height="300px"
                             loading="lazy" />
                         </picture>
                         <span>Shader Tutorials</span>
