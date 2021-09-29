@@ -66,12 +66,12 @@
         .imgbutton {
             border-style: solid;
             border-width: 3px;
-            border-color: #ddd;
+            border-color: #95d6cf;
             border-radius: 10px;
             background-color: #95d6cf;
             opacity: 1;
             color: #ddd;
-            font-size: 40px;
+            font-size: 2em;
             font-weight: 700;
             background-clip: border-box;
             -webkit-text-fill-color: inherit;
@@ -99,37 +99,42 @@
         .imgbutton:hover picture, .imgbutton img {
             opacity:1;
         }
-
         .grid .button span, .grid .imgbutton span {
             position: absolute;
+        }
+        .grid .button p {
+            position: relative;
+        }
+        .grid .button span, .grid .imgbutton span, .grid .button p {
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
             z-index: 4;
         }
         .button {
-            border-style: solid;
-            border-width: 3px;
-            border-color: #ddd;
+            border:3px solid #95d6cf;
             border-radius: 10px;
-            background-color: #95d6cf;
+            background-color: #ddd;
             opacity: 1;
-            color: #ddd;
-            font-size: 40px;
+            color: #283a47;
+            font-size: 2em;
             font-weight: 700;
             background-clip: border-box;
             -webkit-text-fill-color: inherit;
             text-decoration: none;
             cursor: pointer;
             display: inline-block;
-            margin:0 10px;
+            position:relative;
+            z-index:0;
+            overflow:hidden;
         }
+        .button:hover{background-color:#95d6cf;color:#283a47;border:3px solid #ddd}
         a.button {
             padding: 5px;
         }
-        .button a {
-            text-decoration:none;
-            color:#283a47;
+        a.button p {
+            margin:0 0;
+            text-align:center;
         }
         .button:hover a {
             color:#ddd;
@@ -137,8 +142,6 @@
         @media screen and (max-width:270px){
             header h1{font-size:12vw}
         }
-        .button{position:relative;z-index:0;overflow:hidden;margin:0 auto 0 auto;border:3px solid #95d6cf;background-color:#ddd;color:#283a47}
-        .button:hover{background-color:#95d6cf;color:#283a47;border:3px solid #ddd}
         .name {
             font-family:Cormorant;
             color:#95d6cf;
@@ -152,11 +155,6 @@
         }
         #portfolio {
             max-height:112px;
-        }
-        #tutorials picture {
-            position:absolute;
-            left:-60%;
-            top:-10%;
         }
         .particles {
             position:fixed;
@@ -205,18 +203,8 @@
                     <span>Portfolio</span>
                 </a>
                 <div class="vertical-grid">
-                    <a id="tutorials" class="imgbutton" href="https://astridwilde.com/tutorials/">
-                        <picture>
-                            <source type="image/webp"
-                            srcset="assets/images/grass_preview.webp" />
-                        <img
-                            srcset="assets/images/grass_preview.jpg"
-                            src="assets/images/grass_preview.jpg" alt="tutorials" height="300px"
-                            loading="lazy" />
-                        </picture>
-                        <span>Shader Tutorials</span>
-                    </a>
-                    <a href="https://astridwilde.substack.com/" class="button">A History of Liberalisms (blog)</a>
+                    <a id="tutorials" class="button" href="https://astridwilde.com/tutorials/"><p>Shader Tutorials</p></a>
+                    <a href="https://astridwilde.substack.com/" class="button"><p>A History of Liberalisms (blog)</p></a>
                 </div>
             </div>
         </div>
