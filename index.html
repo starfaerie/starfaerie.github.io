@@ -29,8 +29,7 @@
     <meta name="twitter:creator" content="@astridwilde1">
 
     <link rel="stylesheet" href="assets/css/normalize.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@300&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/fonts/Cormorant.css">
     <style type="text/css">
         html{
             margin:0;
@@ -63,11 +62,7 @@
         }
         .vertical-grid{
             display:grid;
-            grid-template-columns:repeat(2, 1fr);
-        }
-        .vertical-grid .button {
-            margin:0 10px;
-            max-width:100%;
+            grid-template-columns:repeat(2,1fr);
         }
         .imgbutton {
             border-style: solid;
@@ -93,7 +88,7 @@
         .imgbutton {
             color:#283a47;
         }
-        .imgbutton,.imgbutton span,.imgbutton picture,.imgbutton img,.button,.coin{transition:all .3s;-webkit-transition:all .3s;-moz-transition:all .3s;-o-transition:all .3s}
+        .imgbutton,.imgbutton span,.imgbutton picture,.imgbutton img,.coin,.block{transition:all .3s;-webkit-transition:all .3s;-moz-transition:all .3s;-o-transition:all .3s}
         .imgbutton:hover span {
             color:#ddd;
         }
@@ -103,44 +98,20 @@
         .imgbutton:hover picture, .imgbutton img {
             opacity:1;
         }
-        .grid .button span, .grid .imgbutton span {
+        .grid .imgbutton span {
             position: absolute;
         }
-        .grid .button p {
-            position: relative;
-        }
-        .grid .button span, .grid .imgbutton span, .grid .button p {
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
+        .grid .imgbutton span {
+            display:inline-block;
+            text-align: center;
+            top:50%;
+            left:50%;
+            -ms-transform:translate(-50%,-50%);
+            -webkit-transform:translate(-50%,-50%);
+            -o-transform:translate(-50%,-50%);
+            -moz-transform:translate(-50%,-50%);
+            transform:translate(-50%,-50%);
             z-index: 4;
-        }
-        .button {
-            border:3px solid #95d6cf;
-            border-radius: 10px;
-            background-color: #ddd;
-            opacity: 1;
-            color: #283a47;
-            font-size:1.4em;
-            font-weight: 700;
-            background-clip: border-box;
-            -webkit-text-fill-color: inherit;
-            cursor: pointer;
-            display: inline-block;
-            position:relative;
-            z-index:0;
-            overflow:hidden;
-        }
-        .button:hover{background-color:#95d6cf;color:#283a47;border:3px solid #ddd}
-        a.button {
-            padding: 5px;
-        }
-        a.button p {
-            margin:0 0;
-            text-align:center;
-        }
-        .button:hover a {
-            color:#ddd;
         }
         @media screen and (max-width:270px){
             header h1{font-size:12vw}
@@ -217,7 +188,6 @@
             background-color:#fff;
             border-radius: 50%;
             z-index:1;
-
         }
         .thought1 {
             left:60%;
@@ -239,6 +209,44 @@
             margin-top:15px;
             height: 25px;
             width: 25px;
+        }
+        .block{
+            z-index:0;
+            overflow:hidden;
+            max-width:100%;
+            border: 3px solid #95d6cf;
+            border-radius: 10px;
+            margin: 0 10px;
+            background-color: #ddd;
+            display:block;
+        }
+        .block:hover{background-color:#95d6cf;border-color:#ddd}
+        .block a{
+            width:100%;
+            height:100%;
+            overflow:hidden;
+            display:block;
+            color: #283a47;
+            font-size: 1.4em;
+            font-weight: 700;
+            background-clip: border-box;
+            -webkit-text-fill-color: inherit;
+            position: relative;
+            z-index: 0;
+        }
+        .block a p{
+            position:relative;
+            margin:0;
+            word-wrap:break-word;
+            padding:16px 2px;
+            display:inline-block;
+            text-align: center;
+            top:50%;
+            -ms-transform:translateY(-50%);
+            -webkit-transform:translateY(-50%);
+            -o-transform:translateY(-50%);
+            -moz-transform:translate(-50%);
+            transform:translateY(-50%);
         }
     </style>
 </head>
@@ -287,8 +295,12 @@
                     <span>Portfolio</span>
                 </a>
                 <div class="vertical-grid">
-                    <a id="tutorials" class="button" href="https://astridwilde.com/tutorials/" title="My Shader Tutorials"><p>Shader Tutorials</p></a>
-                    <a href="https://astridwilde.substack.com/" class="button" title="My Blog"><p>A History of Liberalisms (blog)</p></a>
+                    <div class="block">
+                        <a id="tutorials" href="https://astridwilde.com/tutorials/" title="My Shader Tutorials"><p>Shader Tutorials</p></a>
+                    </div>
+                    <div class="block">
+                        <a id="blog" href="https://astridwilde.substack.com/" title="My Blog"><p>A History of Liberalisms (blog)</p></a>
+                    </div>
                 </div>
             </div>
         </div>
