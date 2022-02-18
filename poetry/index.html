@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+    <meta name="description" content="Poems by Astrid" />
+    <meta name="author" content="Astrid Wilde" />
+    <link rel="canonical" href="https://astridwilde.com/poetry/" />
+
+    <title>Astrid Wilde - technical artist and amateur historian</title>
+
+    <!-- Facebook Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://astridwilde.com/poetry/">
+    <meta property="og:title" content="Poems by Astrid">
+    <meta property="og:image" content="https://astridwilde.com/assets/images/me_FB.jpg">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="1200"> <!-- Recommended width:1200 -->
+    <meta property="og:image:height" content="630"> <!-- Recommended height:630 -->
+    <meta property="og:image:alt" content="Astrid doing a Miley Cyrus impression">
+    <meta property="og:description" content="Sometimes Astrid writes things and puts them here">
+    <!-- Fewer than 200 characters -->
+    <meta property="og:site_name" content="Astrid Wilde">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Twitter Card (defaults to Open Graph values) -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@astridwilde1">
+    <meta name="twitter:creator" content="@astridwilde1">
+
+    <link rel="stylesheet" href="../assets/css/normalize.css" />
+    <link rel="stylesheet" href="../assets/fonts/Cormorant.css">
+    <style type="text/css">
+        html{
+            margin:0;
+            padding:0;
+            max-width:100%;
+            overflow-x:hidden;
+        }
+        body{
+            text-align:center;margin-left:auto;margin-right:auto;
+            font-family:"Segoe UI", sans-serif, verdana;
+            background-color:#283a47;
+            color:#ddd;
+        }
+        a {
+            text-decoration:none;
+            color:#356385;
+        }
+        a:hover {
+            text-decoration:underline;
+        }
+        header{margin-top:20px;margin-bottom:20px}
+        header h2 {margin:4px}
+        header img{border-radius:50%;max-width:90%;height:auto;border-style:solid;border-color:#95d6cf;border-width:3px}
+        .container {
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 940px;
+        }
+        .grid {
+            display:grid;
+            row-gap:10px;
+            grid-row-gap:10px;
+            margin-bottom:20px;
+        }
+        .vertical-grid{
+            display:grid;
+            grid-template-columns:repeat(2,1fr);
+        }
+        @media screen and (max-width:270px){
+            header h1{font-size:12vw}
+        }
+        .name {
+            font-family:Cormorant;
+            color:#95d6cf;
+            font-size:3em;
+            margin:0 0.4em 0;
+        }
+        .email {
+            margin:0;
+            padding:0;
+            font-family: monospace;
+            color:#fff;
+        }
+        .particles {
+            position:fixed;
+            display:block;
+            top:0;
+            bottom:0;
+            left:0;
+            right:0;
+            z-index:-1;
+            height:100vh;
+            width:100vw;
+        }
+        .block{
+            z-index:0;
+            overflow:hidden;
+            max-width:100%;
+            border: 3px solid #95d6cf;
+            border-radius: 10px;
+            margin: 0 10px;
+            background-color: #ddd;
+            display:block;
+        }
+        .block h1, .block h2, .block h3, .block h4, .block h5, .block p {
+            color:#010b13;
+        }
+        .block p, .block h2, .block h3, .block h4, .block h5 {
+            text-align:left;
+            margin:1rem;
+        }
+        .tab {text-indent:15px;}
+        .collapsible {
+            background-color: #9e9e9e;
+            color: #fff;
+            cursor: pointer;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 15px;
+            display:flex;
+            display:-webkit-flex;
+        }
+        .active, .collapsible:hover {
+            background-color: #777;
+        }
+        .content {
+            padding: 0 18px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+            background-color:#ddd;
+        }
+        .collapsible:before {
+            font-family:sans-serif;
+            content:'\02795'; /* Unicode character for "plus" sign (+) */
+            font-size:13px;
+            font-weight:bold;
+            margin:5px;
+            color:#fff;
+            display:flex;
+            display:-webkit-flex;
+            align-self:center;
+        }
+        .active:before {
+            content:'\2796'; /* Unicode character for "minus" sign (-) */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="https://astridwilde.com/" title="Astrid (me)">
+            <picture>
+                <source type="image/webp"
+                    srcset="../assets/images/author-image_170.webp, ../assets/images/author-image_255.webp 1.5x, ../assets/images/author-image_340.webp 2x" />
+                <img
+                    srcset="../assets/images/author-image_170.jpg, ../assets/images/author-image_255.jpg 1.5x, ../assets/images/author-image_340 2x"
+                    src="../assets/images/author-image_340.jpg" alt="Astrid Wilde" height="220" width="220"
+                    loading="lazy" />
+            </picture>
+        </a>
+        <h1 class="name">Astrid Wilde</h1>
+        <p class="email">astrid@astridwilde.com</p>
+    </header>
+    <div class="section">
+        <div class="container">
+            <div class="grid">
+                <div class="block">
+                    <h1>Poems</h1>
+                    <button type="button" class="collapsible"><h3>Junebug</h3></button>
+                    <div class="content">
+                        <h4><i>Junebug, written <time datetime="2014-04">April 2014</time></i></h4>
+                        <p>
+                            We're in the midst of winter<br>
+                            Clouds encroach upon the sun<br>
+                            She wastes away, I shiver,<br>
+                            glancing back before I run<br>
+                            <br>
+                            Mortified, I'm mortified by what she has become<br>
+                            Fortified, I've fortified the way I say “I love”<br>
+                            You're only sixteen once<br>
+                            We made sixteen plus one<br>
+                            You're only sixteen once<br>
+                            We made sixteen more fun<br>
+                            <br>
+                            Nostalgia<br>
+                            is my best friend<br>
+                            To think that's what I called her<br>
+                            But today we are /end<br>
+                            I was the April wind, and she was more than just a gale<br>
+                            Like colliding hurricanes we dissipated, still I'm<br>
+                            <br>
+                            Mortified, I'm mortified by what we have become<br>
+                            Fortified, I've fortified the way I say “I love my<br>
+                            Junebug<br>
+                            I caught my Junebug<br>
+                            We met in June, bug<br>
+                            I called her <em>my Junebug</em>”
+                        </p>
+                    </div>
+                    <button type="button" class="collapsible"><h3>Are you Dead?</h3></button>
+                    <div class="content">
+                        <h4><i>Are you Dead? written <time datetime="2014-04">April 2014</time></i></h4>
+                        <p>
+                            I wish I could make peace tonight<br>
+                            I know I can't bring back the times<br>
+                            Your favourite place was by my side<br>
+                            <br>
+                            But I'm trying through it all<br>
+                            'Cause your mind's my rise and fall<br>
+                            I know I can't go back in time<br>
+                            I try most nights and but stop for lack of perfect mind<br>
+                            So the memories fade on<br>
+                            But your heart just froze this song<br>
+                            <br>
+                            Why the lack of closure?<br>
+                            Was I just a means to an end?<br>
+                            Why aren't we growing closer?<br>
+                            Did you really mean it when you said…<br>
+                            <br>
+                            “A general lack of feelings, a false sense of healing,<br>
+                            these are the things I keep in your bed.”<br>
+                            <br>
+                            Are you dead? 'Cause you seem dead to me.<br>
+                            I wish you were dead to me, but I can't seem to forget.<br>
+                            <br>
+                            A time when talking wasn't a chore<br>
+                            We both just sat there, wanting each other more<br>
+                            A time for answers, but no obligations<br>
+                            Content with the world, and no hesitations<br>
+                            <br>
+                            When did you get bored?<br>
+                            Did he bring something more?<br>
+                            So are you dead? You seem dead to me.<br>
+                            I wish you were dead to me, but I can't seem to forget.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <canvas class="particles" title="White particles float in the background"></canvas>
+    <script>
+        window.onload = function () {
+            var particles = Particles.init({
+                selector: '.particles',
+                color: ['#fff','#ddd','#eee'],
+                speed:0.2,
+                connectParticles: false
+            });
+        };
+    </script>
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+        
+        for (i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.maxHeight){
+              content.style.maxHeight = null;
+            } else {
+              content.style.maxHeight = content.scrollHeight + "px";
+            } 
+          });
+        }
+    </script>
+    <script async src="../tutorials/particles/dist/particles.min.js"></script>
+</body>
+</html>
