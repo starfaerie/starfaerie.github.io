@@ -78,7 +78,7 @@
     }
 
     ul li {
-        display: inline-block;
+        display:list-item;
     }
 
     ul.list {
@@ -200,6 +200,10 @@
     }
 
     /* Sidebar Menu */
+
+    ul.social-icons li {
+        display:inline-block;
+    }
 
     .menu .image {
         margin-top: 20px;
@@ -396,6 +400,10 @@
         letter-spacing: 0.5px;
     }
 
+    .subheading {
+        padding:20px;
+    }
+
 
     /* Buttons */
 
@@ -492,7 +500,7 @@
         stroke-width:5;
     }
     a#tutorial-img:hover svg circle#grow {
-        fill:#f00;
+        fill:#202020;
     }
 
     /* Left & Right Post */
@@ -840,7 +848,7 @@
     -webkit-transform: rotateX(0);
     -moz-transform: rotate(0);
     -o-transform: rotate(0);
-    opacity: 0.5;
+    opacity: 0.7;
     }
 
     /*
