@@ -127,13 +127,13 @@
             padding:0;
             font-family: monospace;
         }
-        #portfolio {
+        #portfolio, #podcast {
             max-height:112px;
         }
-        #portfolio:hover {
+        #portfolio:hover, #podcast:hover {
             max-height:168px;
         }
-        #tutorials {
+        #tutorials, #blog {
             font-size:1.9em;
         }
         .particles {
@@ -284,7 +284,7 @@
         <div class="container">
             <div class="grid">
                 <div class="block">
-                    <a id="about" href="https://astridwilde.com/about/" title="About Me"><p>Who is Astrid?</p></a>
+                    <a id="about" href="https://astridwilde.com/about/" title="About Me"><p>Active Projects</p></a>
                 </div>
                 <a id="portfolio" class="imgbutton" href="https://astridwilde.com/portfolio/" title="My Tech Art Portfolio">
                     <picture>
@@ -302,9 +302,20 @@
                         <a id="tutorials" href="https://astridwilde.com/tutorials/" title="My Shader Tutorials"><p>Shader Tutorials</p></a>
                     </div>
                     <div class="block">
-                        <a id="blog" href="https://astridwilde.substack.com/" title="My Blog"><p>My Newsletter</p></a>
+                        <a id="blog" href="https://astridwilde.substack.com/" title="My Blog"><p>Newsletter</p></a>
                     </div>
                 </div>
+                <a id="podcast" class="imgbutton" href="https://anchor.fm/astrid-wilde" title="My Podcast">
+                    <picture>
+                        <source type="image/webp"
+                            srcset="assets/images/felurian_768.webp, assets/images/felurian_1152.webp 1.5x, assets/images/felurian_1536.webp 2x, assets/images/felurian_3072.webp 4x" />
+                        <img
+                            srcset="assets/images/felurian_768.jpg, assets/images/felurian_1152.jpg 1.5x, assets/images/felurian_1536.jpg 2x, assets/images/felurian_3072.jpg 4x"
+                            src="assets/images/felurian_1536.jpg" alt="podcast" height="170" width="940"
+                            loading="lazy" />
+                    </picture>
+                    <span>Podcast</span>
+                </a>
             </div>
         </div>
     </div>
