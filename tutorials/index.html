@@ -290,16 +290,77 @@
         title="Go to top of page">Top</button>
     <canvas class="background" title="Pink and gold particles float in the background"></canvas>
 
-    <!-- Load Particles.js --> -->
-    <script>
-        window.onload = function () {
-            var particles = Particles.init({
-                selector: '.background',
-                color: ['#FFD2A8','#FF9999'],
-                connectParticles: false
+    <!-- Load Particles -->
+    <script async>
+        function createParticles(options) {
+          const canvas = document.querySelector(options.selector);
+          const ctx = canvas.getContext('2d');
+          const particles = [];
+  
+          const {
+            maxParticles = 100,
+            sizeVariations = 3,
+            speed = 2,
+            colors = ['#ff0000', '#00ff00', '#0000ff'],
+          } = options;
+  
+          canvas.width = window.innerWidth;
+          canvas.height = window.innerHeight;
+  
+          function randomInt(min, max) {
+            return Math.floor(Math.random() * (max - min + 1)) + min;
+          }
+  
+          function createParticle() {
+            const offScreenX = Math.random() < 0.5 ? -10 : canvas.width + 10;
+            const offScreenY = Math.random() * canvas.height;
+            const size = randomInt(1, sizeVariations);
+            const xSpeed = Math.random() * speed - speed / 2;
+            const ySpeed = Math.random() * speed - speed / 2;
+            const color = colors[Math.floor(Math.random() * colors.length)];
+  
+            return { x: offScreenX, y: offScreenY, size, xSpeed, ySpeed, color };
+          }
+  
+          function draw() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+  
+            while (particles.length < maxParticles) {
+              particles.push(createParticle());
+            }
+  
+            particles.forEach((particle) => {
+              ctx.beginPath();
+              ctx.arc(particle.x, particle.y, particle.size, 0, Math.PI * 2);
+              ctx.fillStyle = particle.color;
+              ctx.fill();
+  
+              particle.x += particle.xSpeed;
+              particle.y += particle.ySpeed;
+  
+              if (
+                (particle.x < -10 || particle.x > canvas.width + 10) ||
+                (particle.y < -10 || particle.y > canvas.height + 10)
+              ) {
+                particles.splice(particles.indexOf(particle), 1);
+              }
             });
-        };
-
+  
+            requestAnimationFrame(draw);
+          }
+  
+          draw();
+        }
+  
+        createParticles({
+          selector: '.background',
+          maxParticles: 100,
+          sizeVariations: 3,
+          speed: 1.5,
+          colors: ['#FFD2A8','#FF9999'],
+        });
+    </script>
+    <script>
         //Get the button:
         var mybutton = document.getElementById("myBtn");
 
@@ -371,7 +432,6 @@
             document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
         }
     </script>
-    <script async src="particles/dist/particles.min.js"></script>
 </body>
 
 </html>
